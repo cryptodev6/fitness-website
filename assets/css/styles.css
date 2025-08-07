@@ -4343,3 +4343,45 @@ hr,
   border: 3px solid #A5A7FF !important; /* Borde accent */
   box-shadow: 0 4px 8px rgba(124, 130, 255, 0.3) !important; /* Sombra suave primario */
 }
+
+/* ===== Subscribe Modal ===== */
+.subscribe-modal .modal-content {
+  border-radius: 24px;
+  box-shadow: 0 20px 80px rgba(0,0,0,.3);
+}
+
+.subscribe-modal .modal-hero {
+  background-image:
+    linear-gradient(rgba(20,20,20,.35), rgba(20,20,20,.35)),
+    url("https://yoga.websitelayout.net/img/content/about1.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 380px;
+}
+
+.subscribe-modal h3 { line-height: 1.15; }
+
+.subscribe-modal .form-control {
+  padding: .9rem 1.25rem;
+}
+
+.subscribe-modal .modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 2;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0,0,0,.55);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 767.98px) {
+  .subscribe-modal .modal-dialog { margin: .75rem; }
+  .subscribe-modal .modal-hero { display: none; }
+}

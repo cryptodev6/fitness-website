@@ -747,7 +747,7 @@
 
         <!-- CLIENTS
         ================================================== -->
-        <section class="md bg-light wow fadeIn" data-wow-delay="200ms">
+        <!--section class="md bg-light wow fadeIn" data-wow-delay="200ms">
             <div class="container-fluid">
                 <div class="client-carousel owl-carousel owl-theme">
                     <div class="text-center">
@@ -770,7 +770,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section-->
 
         <!-- FOOTER
         ================================================== -->
@@ -888,6 +888,46 @@
 
     </div>
 
+    <!-- Newsletter / Subscribe Modal -->
+    <div class="modal fade subscribe-modal" id="subscribeModal" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content p-0 border-0 overflow-hidden">
+          <button type="button" class="modal-close" data-dismiss="modal" data-bs-dismiss="modal" aria-label="Cerrar">
+          <i class="fas fa-times"></i>
+        </button>
+
+
+          <div class="row g-0">
+            <!-- Imagen / Hero -->
+            <div class="col-md-6 d-none d-md-block modal-hero"></div>
+
+            <!-- Contenido -->
+            <div class="col-12 col-md-6 p-4 p-lg-5">
+              <span class="sm-title rounded-pill bg-secondary text-white px-3 py-1 mb-3 d-inline-block">Newsletter</span>
+              <h3 class="h2 mb-2">Suscríbete para recibir más información</h3>
+              <p class="text-muted mb-4">Tips de nutrición, entrenamiento, recetas y promos exclusivas.</p>
+
+              <form id="subscribeForm" class="newsletter-form" novalidate>
+                <div class="form-group mb-3">
+                  <input type="email" class="form-control form-control-lg rounded-pill" id="subscribeEmail"
+                         placeholder="Tu correo electrónico" required>
+                </div>
+
+                <button type="submit" class="btn btn-style1 medium text-white w-100 rounded-pill">
+                  Suscribirme
+                </button>
+
+                <small class="form-text mt-3 text-muted d-block">
+                  Cero spam. Puedes darte de baja cuando quieras.
+                </small>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <!-- BUY TEMPLATE
     ================================================== -->
     <div class="buy-theme alt-font d-none d-lg-inline-block"><a href="" target="_blank"><i class="fas fa-cart-plus"></i><span>Whatsapp</span></a></div>
@@ -921,6 +961,80 @@
 
     <!-- form scripts js -->
     <script src="https://yoga.websitelayout.net/quform/js/scripts.js"></script>
+<script>
+(function () {
+  var KEY = 'nl_status'; // 'subscribed' | 'dismissed'
+
+  // ------- helpers: work with Bootstrap 4 (jQuery plugin) or Bootstrap 5 (class API)
+  function hasjQueryModal(el) { return !!(window.jQuery && jQuery.fn && jQuery.fn.modal && jQuery(el).modal); }
+  function showModal(sel) {
+    var el = document.querySelector(sel);
+    if (!el) return;
+    if (hasjQueryModal(el)) { jQuery(sel).modal('show'); }
+    else if (window.bootstrap && bootstrap.Modal) { bootstrap.Modal.getOrCreateInstance(el).show(); }
+  }
+  function hideModal(sel) {
+    var el = document.querySelector(sel);
+    if (!el) return;
+    if (hasjQueryModal(el)) { jQuery(sel).modal('hide'); }
+    else if (window.bootstrap && bootstrap.Modal) { bootstrap.Modal.getOrCreateInstance(el).hide(); }
+  }
+
+  function status() { return localStorage.getItem(KEY); }
+  function setStatus(val) { try { localStorage.setItem(KEY, val); } catch (_) {} }
+
+  function showModalOnce() {
+    if (!status()) setTimeout(function(){ showModal('#subscribeModal'); }, 2500);
+  }
+
+  // —— make the X work even if data-* attributes don’t
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('.modal-close');
+    if (!btn) return;
+    e.preventDefault();
+    hideModal('#subscribeModal');
+  });
+
+  // —— mark dismissed/subscribed when the modal actually hides
+  (function bindHiddenEvent(){
+    var el = document.getElementById('subscribeModal');
+    if (!el) return;
+
+    // Bootstrap 5 (native event)
+    el.addEventListener('hidden.bs.modal', function () {
+      if (status() !== 'subscribed') setStatus('dismissed');
+    });
+
+    // Bootstrap 4 (jQuery event) – guard in case jQuery exists
+    if (window.jQuery) {
+      jQuery(el).on('hidden.bs.modal', function () {
+        if (status() !== 'subscribed') setStatus('dismissed');
+      });
+    }
+  })();
+
+  // —— subscribe form
+  document.addEventListener('submit', function (e) {
+    var form = e.target.closest('#subscribeForm');
+    if (!form) return;
+
+    e.preventDefault();
+    var email = (document.getElementById('subscribeEmail') || {}).value || '';
+    var ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if (!ok) { alert('Ingresa un correo válido'); return; }
+
+    // TODO: POST to your backend/newsletter provider
+    // fetch('/api/subscribe', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ email }) })
+
+    setStatus('subscribed');
+    hideModal('#subscribeModal');
+  });
+
+  document.addEventListener('DOMContentLoaded', showModalOnce);
+})();
+</script>
+
+
 
     <!-- all js include end -->
 
