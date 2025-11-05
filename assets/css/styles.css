@@ -4385,3 +4385,344 @@ hr,
   .subscribe-modal .modal-dialog { margin: .75rem; }
   .subscribe-modal .modal-hero { display: none; }
 }
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F8F5EF;
+  color: #3C6147;
+}
+/*feature box*/
+/* Top bar wellness */
+.top-bar {
+  background: #5CB38B;
+  color: white;
+  font-size: 14px;
+  padding: 5px 0;
+}
+.top-bar i {
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+/* Navbar */
+.navbar-default {
+  background: #ffffff;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* Logo */
+.navbar-brand img {
+  max-height: 58px;
+}
+
+/* Menu links */
+.navbar-nav > li > a {
+  padding: 14px 20px;
+  font-weight: 500;
+  color: #3C6147 !important;
+  transition: 0.3s ease;
+  font-size: 15px;
+}
+.navbar-nav > li > a:hover {
+  color: #5CB38B !important;
+}
+
+/* Active link */
+.navbar-nav .active > a {
+  color: #5CB38B !important;
+  font-weight: 600;
+}
+
+/* Buttons wellness */
+.btn-style1 {
+  background: #5CB38B;
+  border-radius: 40px;
+  padding: 10px 26px;
+  font-weight: 500;
+  transition: 0.3s;
+  color: #fff !important;
+}
+.btn-style1:hover {
+  background: #3C6147;
+  box-shadow: 0 6px 20px rgba(92, 179, 139, 0.3);
+}
+
+/* Social icons clean */
+.top-social-icon a i {
+  color: #fff;
+  transition: .3s;
+}
+.top-social-icon a:hover i {
+  color: #3C6147;
+  transform: scale(1.2);
+}
+
+/* Search input */
+.top-search {
+  background: rgba(60, 97, 71, 0.9);
+}
+.search-form_input {
+  border-radius: 30px;
+  border: none;
+  padding: 10px 18px;
+}
+.search-form_input:focus {
+  box-shadow: 0 0 10px rgba(92,179,139,0.4);
+}
+/* Contenedor principal */
+section.features {
+    background-color: #f9f9f9; /* Suave, más cálido que transparente */
+    padding: 80px 0;
+}
+
+/* Tarjetas */
+.card-style5 {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.card-style5:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Iconos */
+.icon-holder {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    position: relative;
+}
+
+.icon-holder .box {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg,#ff7a18,#af002d 70%);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.2;
+}
+
+.icon-wrap img {
+    width: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Títulos y párrafos */
+.card-style5 h4 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-style5 p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .card-style5 {
+        margin-bottom: 30px;
+    }
+}
+
+/* what we offer*/
+.offer-hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+.offer-hero .overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5); /* Control del overlay */
+    z-index: 1;
+}
+
+.offer-hero .offer-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.offer-hero .subtitle {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.offer-hero .title {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .offer-hero {
+        padding: 60px 20px;
+    }
+    .offer-hero .title {
+        font-size: 1.8rem;
+    }
+    .offer-hero .subtitle {
+        font-size: 1rem;
+    }
+}
+/*button event details*/
+.btn-custom {
+  background-color: #4f5bff; /* */
+  border: none;
+  color: white;
+  transition: 0.3s;
+}
+
+.btn-custom:hover {
+  background-color: #e63e6a; /* tono más oscuro en hover */
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 79, 129, 0.4);
+}
+
+/*header event detail*/
+header .navbar {
+  padding: 15px 0 !important;
+}
+
+.navbar-brand img {
+  max-height: 55px;
+}
+
+#nav > li {
+  padding: 0 15px;
+}
+
+.btn-custom {
+  background-color: #2b08f0;
+  color: white;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.btn-custom:hover {
+  background-color: #e63e6a;
+  transform: translateY(-2px);
+}
+
+
+
+/*footer index*/
+footer {
+  background-color: #0d0d0d; 
+}
+
+footer .hover-opacity:hover {
+  opacity: 1 !important;
+}
+
+footer .hover-opacity {
+  transition: opacity 0.25s ease-in-out;
+}
+
+footer h5 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer .input-group input {
+  border: none;
+  padding: 12px 15px;
+  font-size: 0.95rem;
+}
+
+footer .input-group .btn {
+  font-weight: 600;
+}
+
+footer .input-group input:focus {
+  box-shadow: none !important;
+}
+
+footer .list-inline-item a {
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+footer .opacity-75 {
+  opacity: 0.75 !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  footer .list-inline-item {
+    display: block;
+    margin: 6px 0;
+  }
+}
+
+/* Button color suggestion (Fitness vibe) */
+.btn-primary {
+  background-color: #18d26e !important;
+  border-color: #18d26e !important;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.15);
+}
+
+/* Fade animation for footer */
+footer {
+  animation: fadeInUp 0.7s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Logo scroll swap */
+.sticky-top.scrolled #logo-default { display: none; }
+.sticky-top.scrolled #logo-scroll { display: block !important; }
+
+/* Navbar links */
+.navbar .nav-link {
+    color: #111;
+    padding: 0.75rem 1rem;
+    transition: .2s;
+}
+
+.navbar .nav-link:hover {
+    color: var(--bs-primary);
+}
+
+/* Top bar */
+.top-bar i {
+    opacity: .8;
+}
+
+/* Smooth shadow on scroll */
+header.sticky-active {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}

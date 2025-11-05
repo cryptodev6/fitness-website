@@ -36,6 +36,11 @@
 
     <!-- theme core css -->
     <link href="assets/css/styles.css" rel="stylesheet">
+    <!--tipografia-->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+
 
 </head>
 
@@ -51,89 +56,61 @@
 
         <!-- HEADER
         ================================================== -->
-        <header class="header-style2">
+<header class="header-modern shadow-sm">
 
-            <div class="top-bar bg-primary">
-                <div class="container-fluid px-lg-1-6 px-xl-2-5 px-xxl-2-9">
-                    <div class="row">
-                        <div class="col-md-9 col-xs-12">
-                            <div class="top-bar-info">
-                                <ul class="ps-0">
-                                    <li><i class="ti-mobile"></i>(+123) 456 7890</li>
-                                    <li class="d-none d-sm-inline-block"><i class="ti-email"></i>addyour@emailhere</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-md-3 d-none d-md-block">
-                            <ul class="top-social-icon ps-0">
-                                <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#!"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#!"><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+    <!-- Top bar -->
+    <div class="top-bar bg-primary text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            
+            <!-- Contact -->
+            <ul class="list-inline mb-0 small">
+                <li class="list-inline-item me-3"><i class="ti-mobile me-1"></i> +57 300 000 0000</li>
+                <li class="list-inline-item d-none d-md-inline"><i class="ti-email me-1"></i> bienestar@fitlife.com</li>
+            </ul>
+
+            <!-- Social -->
+            <ul class="list-inline mb-0 small">
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white py-3 sticky-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+               <img src="assets/img/logo.png" alt="Logo" height="42">
+
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">Perfil Bienestar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Planes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="event-details.html">Reto 21 Días</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog</a></li>
+                </ul>
+
+                <a href="contact.html" class="btn btn-primary rounded-pill ms-lg-4 fw-bold px-4">
+                    Agenda tu llamada
+                </a>
             </div>
+        </div>
+    </nav>
 
-            <div class="navbar-default border-bottom border-color-light-black">
+</header>
 
-                <!-- start top search -->
-                <div class="top-search bg-secondary">
-                    <div class="container-fluid px-lg-1-6 px-xl-2-5 px-xxl-2-9">
-                        <form class="search-form"  method="GET" accept-charset="utf-8">
-                            <div class="input-group">
-                                <span class="input-group-addon cursor-pointer">
-                                    <button class="search-form_submit fas fa-search text-white" type="submit"></button>
-                                </span>
-                                <input type="text" class="search-form_input form-control" name="s" autocomplete="off" placeholder="Type & hit enter...">
-                                <span class="input-group-addon close-search mt-1"><i class="fas fa-times"></i></span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- end top search -->
-
-                <div class="container-fluid px-lg-1-6 px-xl-2-5 px-xxl-2-9">
-                    <div class="row align-items-center">
-                        <div class="col-12 col-lg-12">
-                            <div class="menu_area alt-font">
-                                <nav class="navbar navbar-expand-lg navbar-light p-0">
-                                    <div class="navbar-header navbar-header-custom">
-                                        <!-- start logo -->
-                                        <a href="index.html" class="navbar-brand logodefault"><img id="logo" src="https://yoga.websitelayout.net/img/logos/logo.png" alt="logo" /></a>
-                                        <!-- end logo -->
-                                    </div>
-
-                                    <div class="navbar-toggler bg-primary"></div>
-
-                                    <!-- start menu area -->
-                                    <ul class="navbar-nav ms-auto" id="nav">
-                                      <li><a href="index.html">Inicio</a></li>
-                                      <li><a href="history.html">Perfil Bienestar</a></li>
-                                      <li><a href="services.html">Planes</a></li>
-                                      <li><a href="event-details.html">Reto 21 Días</a></li>
-                                      <li><a href="blog-grid.html">Blog</a></li>
-                                    </ul>
-
-
-                                    <!-- end menu area -->
-
-                                    <!-- start attribute navigation -->
-                                    <div class="attr-nav align-items-xl-center ms-xl-auto main-font">
-                                        <ul>
-                                            <li class="search"><a href="#!"><i class="fas fa-search"></i></a></li>
-                                            <li class="d-none d-xl-inline-block"><a href="" class="btn-style1 medium text-white">Agenda una llamada</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- end attribute navigation -->
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
 
         <!-- BANNER
         ================================================== -->
@@ -141,181 +118,231 @@
         <section class="full-screen py-0 top-position">
           <div class="slider-fade owl-carousel owl-theme w-100 h-100">
 
-            <!-- Slide 1 -->
-            <div class="item bg-img cover-background left-overlay-dark" 
-                 data-overlay-dark="75" 
-                 data-background="https://yoga.websitelayout.net/img/banner/banner-1.jpg">
-              <div class="container h-100">
-                <div class="d-table w-100 h-100">
-                  <div class="d-table-cell align-middle">
-                    <div class="row position-relative">
-                      <div class="col-md-10 col-lg-9 col-xl-8 z-index-3 position-relative">
-                        <div class="banner-style01">
-                          <span class="sec-title3 display-29 display-lg-28 text-secondary text-shadow">
-                            Nutrición · Entrenamiento · Bienestar
-                          </span>
-                          <h1 class="text-white text-shadow fadeInUp mb-2-4">
-                            Transforma tu cuerpo, renueva tu energía
-                          </h1>
-                          <a href="contact.html" class="btn-style1 fadeInUp">
-                            Empieza ahora
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+<!-- Slide 1 -->
+<section 
+  class="item bg-img cover-background left-overlay-dark"
+  data-overlay-dark="75"
+  data-background="https://yoga.websitelayout.net/img/banner/banner-1.jpg"
+  role="banner"
+>
 
-            <!-- Slide 2 -->
-            <div class="item bg-img cover-background left-overlay-dark" 
-                 data-overlay-dark="75" 
-                 data-background="https://yoga.websitelayout.net/img/banner/banner-2.jpg">
-              <div class="container h-100">
-                <div class="d-table w-100 h-100">
-                  <div class="d-table-cell align-middle">
-                    <div class="row position-relative">
-                      <div class="col-md-10 col-lg-9 col-xl-8 z-index-3 position-relative">
-                        <div class="banner-style01 pt-13 pt-sm-0 pb-7 pb-sm-0">
-                          <span class="sec-title3 display-29 display-lg-28 text-secondary text-shadow">
-                            Equilibrio y fuerza
-                          </span>
-                          <h1 class="text-white text-shadow fadeInUp mb-2-4">
-                            Entrena sin extremos, vive en equilibrio
-                          </h1>
-                          <a href="contact.html" class="btn-style1 fadeInUp">
-                            Conócenos
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <div class="container h-100">
+    <div class="d-table w-100 h-100">
+      <div class="d-table-cell align-middle">
+        <div class="row position-relative">
+          <div class="col-md-10 col-lg-9 col-xl-8 z-index-3 position-relative">
 
-            <!-- Slide 3 -->
-            <div class="item bg-img cover-background left-overlay-dark" 
-                 data-overlay-dark="75" 
-                 data-background="https://yoga.websitelayout.net/img/banner/banner-3.jpg">
-              <div class="container h-100">
-                <div class="d-table w-100 h-100">
-                  <div class="d-table-cell align-middle">
-                    <div class="row position-relative">
-                      <div class="col-md-10 col-lg-9 col-xl-8 z-index-3 position-relative">
-                        <div class="banner-style01 pt-13 pt-sm-0 pb-7 pb-sm-0">
-                          <span class="sec-title3 display-29 display-lg-28 text-secondary text-shadow">
-                            Acompañamiento real
-                          </span>
-                          <h1 class="text-white text-shadow fadeInUp mb-2-4">
-                            Tu coach personal, paso a paso
-                          </h1>
-                          <a href="contact.html" class="btn-style1 fadeInUp">
-                            Agenda tu llamada
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="banner-style01">
+
+              <!-- Subtítulo -->
+              <span class="sec-title3 display-29 display-lg-28 text-black text-shadow">
+                Nutrición · Entrenamiento · Bienestar
+              </span>
+
+              <!-- Título principal -->
+              <h2 class="text-white text-shadow fadeInUp mb-2-4">
+                Transforma tu cuerpo y tu energía
+              </h2>
+
+              <!-- Descripción -->
+              <p class="text-white text-shadow fadeInUp mb-3 opacity-8 fs-5">
+                Programas personalizados de coaching nutricional y fitness para resultados reales y duraderos.
+              </p>
+
+              <!-- Botón acción -->
+              <a 
+                href="contact.html" 
+                class="btn-style1 fadeInUp"
+                aria-label="Comenzar programa personal"
+              >
+                Comienza tu transformación
+              </a>
+
+            </div><!-- /banner-style01 -->
 
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+            <!-- Slide 2 -->
+<section 
+  class="item bg-img cover-background left-overlay-dark"
+  data-overlay-dark="75"
+  data-background="https://yoga.websitelayout.net/img/banner/banner-2.jpg"
+  role="banner"
+>
+
+  <div class="container h-100">
+    <div class="d-table w-100 h-100">
+      <div class="d-table-cell align-middle">
+        <div class="row position-relative">
+          <div class="col-md-10 col-lg-9 col-xl-8 z-index-3 position-relative">
+
+            <div class="banner-style01">
+
+              <!-- Subtítulo -->
+              <span class="sec-title3 display-29 display-lg-28 text-black text-shadow">
+                Equilibrio y fuerza
+              </span>
+
+              <!-- Título principal -->
+              <h2 class="text-white text-shadow fadeInUp mb-2-4">
+                Entrena sin extremos, vive en equilibrio
+              </h2>
+
+              <!-- Descripción -->
+              <p class="text-white text-shadow fadeInUp mb-3 opacity-8 fs-5">
+                Planes de coaching nutricional y fitness diseñados para verte y sentirte increíble.
+              </p>
+
+              <!-- Botón -->
+              <a href="contact.html" class="btn-style1 fadeInUp" aria-label="Conoce nuestros programas">
+                Conócenos
+              </a>
+
+            </div><!-- /banner-style01 -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+           <!-- Slide 3 -->
+<section 
+  class="item bg-img cover-background left-overlay-dark"
+  data-overlay-dark="75"
+  data-background="https://yoga.websitelayout.net/img/banner/banner-3.jpg"
+  role="banner"
+>
+
+  <div class="container h-100">
+    <div class="d-table w-100 h-100">
+      <div class="d-table-cell align-middle">
+        <div class="row position-relative">
+          <div class="col-md-10 col-lg-9 col-xl-8 z-index-3 position-relative">
+
+            <div class="banner-style01">
+
+              <!-- Subtítulo -->
+              <span class="sec-title3 display-29 display-lg-28 text-black text-shadow">
+                Acompañamiento real
+              </span>
+
+              <!-- Título principal -->
+              <h2 class="text-white text-shadow fadeInUp mb-2-4">
+                Tu coach personal, paso a paso
+              </h2>
+
+              <!-- Descripción -->
+              <p class="text-white text-shadow fadeInUp mb-3 opacity-8 fs-5">
+                Planes de coaching nutricional y fitness diseñados para verte y sentirte increíble.
+              </p>
+
+              <!-- Botón -->
+              <a href="contact.html" class="btn-style1 fadeInUp" aria-label="Agendar llamada de asesoría">
+                Agenda tu llamada
+              </a>
+
+            </div><!-- /banner-style01 -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
         </section>
 
 
 
-        <!-- FEATURES BOX
-        ================================================== -->
-        <section class="bg-transparent overflow-visible pb-0">
-            <div class="container">
-                <div class="row mt-n1-9">
+       <!-- FEATURES BOX -->
+<section class="features">
+    <div class="container">
+        <div class="row">
 
-                    <div class="col-md-6 col-lg-3 mt-1-9">
-                        <div class="card card-style5 border-0 h-100">
-                            <div class="card-body p-0">
-                                <div class="icon-holder position-relative mb-4">
-                                    <div class="box"></div>       
-                                    <div class="icon-wrap">
-                                        <img src="https://yoga.websitelayout.net/img/icon/icon-2.png" class="w-60px" alt="...">
-                                    </div>                                     
-                                </div>
-                                <div>
-                                    <h4 class="h5">Planes personalizados</h4>
-                                    <p class="mb-0">Creamos un plan de alimentación y entrenamiento según tu cuerpo, tus metas y tu estilo de vida.</p>
-                                </div>
-                            </div>
+            <!-- Feature Item -->
+            <div class="col-md-6 col-lg-3">
+                <article class="feature-item card-style5">
+                    <div class="icon-holder">
+                        <div class="box"></div>
+                        <div class="icon-wrap">
+                            <img src="https://yoga.websitelayout.net/img/icon/icon-2.png" alt="Icono de planes personalizados">
                         </div>
                     </div>
-
-                    <div class="col-md-6 col-lg-3 mt-1-9">
-                        <div class="card card-style5 border-0 h-100">
-                            <div class="card-body p-0">
-                                <div class="icon-holder position-relative mb-4">
-                                    <div class="box"></div>       
-                                    <div class="icon-wrap">
-                                        <img src="https://yoga.websitelayout.net/img/icon/icon-3.png" class="w-60px" alt="...">
-                                    </div>                                     
-                                </div>
-                                <div>
-                                    <h4 class="h5">Entrenamiento sin extremos</h4>
-                                    <p class="mb-0">Rutinas adaptadas a tu nivel, con enfoque en salud y resultados sostenibles, no sacrificios innecesarios.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 mt-1-9">
-                        <div class="card card-style5 border-0 h-100">
-                            <div class="card-body p-0">
-                                <div class="icon-holder position-relative mb-4">
-                                    <div class="box"></div>       
-                                    <div class="icon-wrap">
-                                        <img src="https://yoga.websitelayout.net/img/icon/icon-4.png" class="w-60px" alt="...">
-                                    </div>                                     
-                                </div>
-                                <div>
-                                    <h4 class="h5">Acompañamiento real</h4>
-                                    <p class="mb-0">No estás solo. Te guiamos paso a paso con seguimiento constante, ajustes y atención personalizada.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-3 mt-1-9">
-                        <div class="card card-style5 border-0 h-100">
-                            <div class="card-body p-0">
-                                <div class="icon-holder position-relative mb-4">
-                                    <div class="box"></div>       
-                                    <div class="icon-wrap">
-                                        <img src="https://yoga.websitelayout.net/img/icon/icon-1.png" class="w-60px" alt="...">
-                                    </div>                                     
-                                </div>
-                                <div>
-                                    <h4 class="h5">Bienestar integral</h4>
-                                    <p class="mb-0">Nuestro enfoque va más allá de lo físico: cuidamos tu energía, emociones y salud mental.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                    <h4>Planes personalizados</h4>
+                    <p>Creamos un plan de alimentación y entrenamiento según tu cuerpo, tus metas y tu estilo de vida.</p>
+                </article>
             </div>
-        </section>
+
+            <div class="col-md-6 col-lg-3">
+                <article class="feature-item card-style5">
+                    <div class="icon-holder">
+                        <div class="box"></div>
+                        <div class="icon-wrap">
+                            <img src="https://yoga.websitelayout.net/img/icon/icon-3.png" alt="Icono de entrenamiento sin extremos">
+                        </div>
+                    </div>
+                    <h4>Entrenamiento sin extremos</h4>
+                    <p>Rutinas adaptadas a tu nivel, con enfoque en salud y resultados sostenibles, no sacrificios innecesarios.</p>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <article class="feature-item card-style5">
+                    <div class="icon-holder">
+                        <div class="box"></div>
+                        <div class="icon-wrap">
+                            <img src="https://yoga.websitelayout.net/img/icon/icon-4.png" alt="Icono de acompañamiento real">
+                        </div>
+                    </div>
+                    <h4>Acompañamiento real</h4>
+                    <p>No estás solo. Te guiamos paso a paso con seguimiento constante, ajustes y atención personalizada.</p>
+                </article>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <article class="feature-item card-style5">
+                    <div class="icon-holder">
+                        <div class="box"></div>
+                        <div class="icon-wrap">
+                            <img src="https://yoga.websitelayout.net/img/icon/icon-1.png" alt="Icono de bienestar integral">
+                        </div>
+                    </div>
+                    <h4>Bienestar integral</h4>
+                    <p>Nuestro enfoque va más allá de lo físico: cuidamos tu energía, emociones y salud mental.</p>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
 
 
         <!-- WHAT WE OFFER
         ================================================== -->
-        <section class="bg-img pb-16 cover-background" data-overlay-dark="5" data-background="https://yoga.websitelayout.net/img/bg/bg-03.jpg">
-            <div class="container">
-                <div class="sec-title2 text-center mb-5 wow fadeIn" data-wow-delay="100ms">
-                    <span class="text-white fw-bold display-28">Planes Personalizados</span>
-                    <h2 class="text-white h1 mt-3">Encuentra el plan que se adapta a tu cuerpo y tu estilo de vida</h2>
-                </div>
-            </div>
-        </section>
+    <section class="offer-hero" style="background-image: url('https://yoga.websitelayout.net/img/bg/bg-03.jpg');">
+        <div class="overlay"></div>
+            <div class="container text-center">
+            <div class="offer-content wow fadeIn" data-wow-delay="100ms">
+                <p class="subtitle text-white">Planes Personalizados</p>
+                <h2 class="title">Encuentra el plan que se adapta a tu cuerpo y tu estilo de vida</h2>
+        </div>
+        </div>
+    </section>
+
 
         <!-- SERVICE
         ================================================== -->
@@ -336,7 +363,7 @@
                             </div>
                             <div class="card-body px-3 py-0">
                                 <h3 class="h5"><a href="services.html">Plan Detox</a></h3>
-                                <p>Desintoxica tu cuerpo, reduce inflamación y recupera tu energía desde adentro hacia afuera.</p>
+                                <p>Plan detox, desintoxicación natural, bajar hinchazón, eliminar toxinas</p>
                                 <div class="link-box position-relative">
                                     <a href="services.html" class="overlay-btn position-absolute d-inline-block">
                                         Ver más <i class="ti-arrow-right position-absolute align-middle"></i>
@@ -772,110 +799,68 @@
             </div>
         </section-->
 
-        <!-- FOOTER
-        ================================================== -->
-        <footer class="footer-two bg-dark position-relative overflow-hidden pt-6 pt-md-8"> 
-            <div class="container">
-                <!-- LOGO + NAV -->
-                <div class="row border-bottom border-color-light-white mb-7 pb-2-9 align-items-center">
-                    <div class="col-lg-6 mb-4 mb-lg-0">
-                        <div class="text-center text-lg-start">
-                            <a href="index.html" class="footer-logo">
-                                <img src="" alt="Logo de la marca">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="text-center text-lg-end">
-                            <ul class="list-unstyled mb-0">
-                                <li class="me-4 d-inline-block"><a href="index.html" class="text-white opacity8 text-secondary-hover">Inicio</a></li>
-                                <li class="me-4 d-inline-block"><a href="history.html" class="text-white opacity8 text-secondary-hover">Perfil Bienestar</a></li>
-                                <li class="me-4 d-inline-block"><a href="services.html" class="text-white opacity8 text-secondary-hover">Planes</a></li>
-                                <li class="me-4 d-inline-block"><a href="event-details.html" class="text-white opacity8 text-secondary-hover">Reto 21 Días</a></li>
-                                <li class="me-0 d-inline-block"><a href="blog-grid.html" class="text-white opacity8 text-secondary-hover">Blog</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+       <!-- FOOTER ================================================== -->
+<footer class="bg-dark text-white py-10">
+  <div class="container">
+    <div class="row align-items-center border-bottom pb-4 mb-5">
+      <!-- Logo -->
+      <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+        <a href="index.html" class="d-inline-block">
+          <img src="assets/images/logo-light.png" alt="Logo" class="img-fluid" style="max-height: 60px;">
+        </a>
+      </div>
 
-                <!-- INFO BLOCKS -->
-                <div class="row mb-6 mb-md-8 mt-n1-9">
+      <!-- Menu -->
+      <div class="col-lg-8 text-center text-lg-end">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item me-4"><a href="index.html" class="text-white opacity-75 hover-opacity">Inicio</a></li>
+          <li class="list-inline-item me-4"><a href="history.html" class="text-white opacity-75 hover-opacity">Perfil Bienestar</a></li>
+          <li class="list-inline-item me-4"><a href="services.html" class="text-white opacity-75 hover-opacity">Planes</a></li>
+          <li class="list-inline-item me-4"><a href="event-details.html" class="text-white opacity-75 hover-opacity">Reto 21 Días</a></li>
+          <li class="list-inline-item"><a href="blog-grid.html" class="text-white opacity-75 hover-opacity">Blog</a></li>
+        </ul>
+      </div>
+    </div>
 
-                    <!-- HORARIOS -->
-                    <div class="col-md-6 col-lg-4 mt-1-9">
-                        <div>
-                            <div class="sec-title pb-1-9">
-                                <h3 class="text-white mb-0 h4">Horario de atención</h3>
-                            </div>
-                            <ul class="list-unstyled mb-0">
-                                <li class="text-white opacity6 mb-3">Lunes a Viernes: 9:00 a.m. – 6:00 p.m.</li>
-                                <li class="text-white opacity6 mb-3">Sábados: 10:00 a.m. – 2:00 p.m.</li>
-                                <li class="text-white opacity6 mb-0">Domingos: Cerrado</li>
-                            </ul>
-                        </div>
-                    </div>
+    <!-- Info blocks -->
+    <div class="row g-4 mb-5">
+      <!-- Horarios -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Horario de atención</h5>
+        <p class="opacity-75 mb-1">Lunes a Viernes: 9:00 a.m. – 6:00 p.m.</p>
+        <p class="opacity-75 mb-1">Sábados: 10:00 a.m. – 2:00 p.m.</p>
+        <p class="opacity-75">Domingos: Cerrado</p>
+      </div>
 
-                    <!-- CONTACTO -->
-                    <div class="col-md-6 col-lg-4 mt-1-9">
-                        <div>
-                            <div class="sec-title pb-1-9">
-                                <h3 class="text-white mb-0 h4">Contáctanos</h3>
-                            </div>
-                            <ul class="list-unstyled mb-0">
-                                <li class="mb-3"><a href="#!" class="text-white opacity6 text-secondary-hover">contacto@tumarca.com</a></li>
-                                <li class="mb-3"><a href="#!" class="text-white opacity6 text-secondary-hover">+51 999 999 999</a></li>
-                                <li class="text-white opacity6 mb-0">Av. Salud Integral 101, Lima, Perú</li>
-                            </ul>
-                        </div>
-                    </div>
+      <!-- Contacto -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Contáctanos</h5>
+        <p class="opacity-75 mb-1"><a href="mailto:contacto@.com" class="text-white opacity-75 hover-opacity">contacto@.com</a></p>
+        <p class="opacity-75 mb-1"><a href="tel:+51999999999" class="text-white opacity-75 hover-opacity">+51 999 999 999</a></p>
+        <p class="opacity-75">Av. Salud Integral 101, Lima, Perú</p>
+      </div>
 
-                    <!-- NEWSLETTER -->
-                    <div class="col-md-6 col-lg-4 mt-1-9">
-                        <div>
-                            <div class="sec-title pb-1-9">
-                                <h3 class="text-white mb-0 h4">Suscríbete</h3>
-                            </div>
-                            <p class="opacity6 text-white">Recibe consejos de nutrición, recetas, rutinas y promociones exclusivas directamente en tu correo.</p>
-                            <div class="footer-newsletter">
-                                <form class="quform newsletter-rounded" action="#" method="post" enctype="multipart/form-data">
-                                    <div class="quform-elements">
-                                        <div class="row">
-                                            <!-- Email input -->
-                                            <div class="col-md-12">
-                                                <div class="quform-element m-0">
-                                                    <div class="quform-input">
-                                                        <input class="rounded-pill form-control" id="email_address" type="text" name="email_address" placeholder="Ingresa tu correo" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Botón -->
-                                            <div class="col-md-12">
-                                                <div class="quform-submit-inner">
-                                                    <button class="btn btn-white text-secondary m-0 px-4" type="submit">
-                                                        <i class="fas fa-paper-plane"></i>
-                                                    </button>
-                                                </div>
-                                                <div class="quform-loading-wrap"><span class="quform-loading"></span></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+      <!-- Newsletter -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Suscríbete</h5>
+        <p class="opacity-75">Recibe consejos, recetas y rutinas directamente en tu correo.</p>
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control rounded-start-pill" placeholder="Ingresa tu correo">
+            <button class="btn btn-primary rounded-end-pill" type="submit">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
 
-                </div>
-            </div>
-
-            <!-- COPYRIGHT -->
-            <div class="border-top border-color-light-white py-4">
-                <div class="text-center fw-bold">
-                    <p class="mb-0 text-white">
-                        &copy; <span class="current-year"></span> Todos los derechos reservados. Marca desarrollada por <a href="#!" class="text-secondary text-primary-hover">TuNombre o Agencia</a>
-                    </p>
-                </div>
-            </div>
-        </footer>
+    <!-- Copyright -->
+    <div class="text-center border-top pt-4 opacity-75">
+      <p class="mb-0">&copy; <span class="current-year"></span> Todos los derechos reservados. Desarrollado por <strong></strong></p>
+    </div>
+  </div>
+</footer>
 
 
 
@@ -1033,6 +1018,7 @@
   document.addEventListener('DOMContentLoaded', showModalOnce);
 })();
 </script>
+
 
 
 

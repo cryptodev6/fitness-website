@@ -34,6 +34,8 @@
     <!-- theme core css -->
     <link href="assets/css/styles.css" rel="stylesheet">
 
+    <link href="assets/css/history.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -48,552 +50,264 @@
 
         <!-- HEADER
         ================================================== -->
-        <header class="header-style1 menu_area-light">
-            <div class="navbar-default">
+       <header class="header-modern shadow-sm">
 
-                <!-- start top search -->
-                <div class="top-search bg-secondary">
-                    <div class="container-fluid px-lg-1-6 px-xl-2-5 px-xxl-2-9">
-                        <form class="search-form"  method="GET" accept-charset="utf-8">
-                            <div class="input-group">
-                                <span class="input-group-addon cursor-pointer">
-                                    <button class="search-form_submit fas fa-search text-white" type="submit"></button>
-                                </span>
-                                <input type="text" class="search-form_input form-control" name="s" autocomplete="off" placeholder="Type & hit enter...">
-                                <span class="input-group-addon close-search mt-1"><i class="fas fa-times"></i></span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- end top search -->
+    <!-- Top bar -->
+    <div class="top-bar bg-primary text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            
+            <!-- Contact -->
+            <ul class="list-inline mb-0 small">
+                <li class="list-inline-item me-3"><i class="ti-mobile me-1"></i> +57 300 000 0000</li>
+                <li class="list-inline-item d-none d-md-inline"><i class="ti-email me-1"></i> bienestar@fitlife.com</li>
+            </ul>
 
-                <div class="container-fluid px-lg-1-6 px-xl-2-5 px-xxl-2-9">
-                    <div class="row align-items-center">
-                        <div class="col-12 col-lg-12">
-                            <div class="menu_area alt-font">
-                                <nav class="navbar navbar-expand-lg navbar-light p-0">
-                                    <div class="navbar-header navbar-header-custom">
-                                        <!-- start logo -->
-                                        <a href="index.html" class="navbar-brand"><img id="logo" src="" alt="logo"></a>
-                                        <!-- end logo -->
-                                    </div>
+            <!-- Social -->
+            <ul class="list-inline mb-0 small">
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
 
-                                    <div class="navbar-toggler"></div>
+        </div>
+    </div>
 
-                                    <!-- start menu area -->
-                                    <ul class="navbar-nav ms-auto" id="nav">
-                                      <li><a href="index.html">Inicio</a></li>
-                                      <li><a href="history.html">Perfil Bienestar</a></li>
-                                      <li><a href="services.html">Planes</a></li>
-                                      <li><a href="event-details.html">Reto 21 Días</a></li>
-                                      <li><a href="blog-grid.html">Blog</a></li>
-                                    </ul>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white py-3 sticky-top">
+        <div class="container">
 
-                                    <!-- end menu area -->
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo-light.png" id="logo-default" alt="Logo" height="42">
+                <img src="assets/img/logo-dark.png" id="logo-scroll" alt="Logo" height="42" class="d-none">
+            </a>
 
-                                    <!-- start attribute navigation -->
-                                    <div class="attr-nav align-items-xl-center ms-xl-auto main-font">
-                                        <ul>
-                                            <li class="search"><a href="#!"><i class="fas fa-search"></i></a></li>
-                                            <li class="d-none d-xl-inline-block"><a href="contact.html" class="btn-style1 primary medium text-white">Free Quote</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- end attribute navigation -->
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">Perfil Bienestar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Planes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="event-details.html">Reto 21 Días</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog</a></li>
+                </ul>
+
+                <a href="contact.html" class="btn btn-primary rounded-pill ms-lg-4 fw-bold px-4">
+                    Agenda tu llamada
+                </a>
             </div>
-        </header>
+        </div>
+    </nav>
+
+</header>
 
 
-<section class="p-0 bg-light">
+<!-- SECCIÓN: Por qué elegirnos -->
+<section class="p-0 bg-light why-section">
   <div class="container-fluid px-0">
     <div class="row g-0">
       <div class="col-lg-6">
-        <div class="bg-img h-100 cover-background" data-overlay-dark="0" data-background="https://yoga.websitelayout.net/img/content/why-choose01.jpg"></div>
+        <div class="bg-img h-100 cover-background" data-overlay-dark="0"
+          data-background="https://yoga.websitelayout.net/img/content/why-choose01.jpg"></div>
       </div>
+
       <div class="col-lg-6">
         <div class="p-sm-1-9 p-xl-6 why-choose-02">
+          <span class="sec-title3 display-29 display-lg-28 text-gray-200 text-shadow title-intro">
+            Tu cambio <span class="accent">empieza por conocerte</span>
+          </span>
 
-          <div class="d-flex why-choose xl-align-items-center mb-2-9">
+          <!-- Item 1 -->
+          <div class="d-flex why-choose align-items-center mb-2-9">
             <div class="icon-box-icon">
               <div class="icon-wrap -img">
-                <img src="https://yoga.websitelayout.net/img/icon/icon-1.png" alt="...">
+                <img src="https://yoga.websitelayout.net/img/icon/icon-1.png" alt="Acompañamiento profesional">
               </div>
             </div>
             <div>
-              <h3 class="mt-2 h4">Acompañamiento profesional</h3>
-              <p class="mb-0 w-sm-80">Nuestros entrenadores y nutricionistas certificados te guían paso a paso para alcanzar tus metas.</p>
+              <h3 class="mt-2 h4"><span class="highlight">Acompañamiento profesional</span></h3>
+              <p class="mb-0 w-sm-80">
+                Nuestros <span class="keyword">entrenadores certificados</span> y <span class="keyword">nutricionistas</span>
+                te guían paso a paso para que alcances <strong>resultados reales</strong>.
+              </p>
             </div>
           </div>
 
-          <div class="d-flex why-choose xl-align-items-center mb-2-9">
+          <!-- Item 2 -->
+          <div class="d-flex why-choose align-items-center mb-2-9">
             <div class="icon-box-icon">
               <div class="icon-wrap -img">
-                <img src="https://yoga.websitelayout.net/img/icon/icon-2.png" alt="...">
+                <img src="https://yoga.websitelayout.net/img/icon/icon-2.png" alt="Enfoque integral">
               </div>
             </div>
             <div>
-              <h3 class="mt-2 h4">Enfoque integral</h3>
-              <p class="mb-0 w-sm-80">No solo transformamos tu cuerpo, también tu mentalidad, hábitos y relación con la comida.</p>
+              <h3 class="mt-2 h4"><span class="highlight">Enfoque integral</span></h3>
+              <p class="mb-0 w-sm-80">
+                No transformamos solo tu cuerpo: también tu <span class="keyword">mentalidad</span>, tus <span class="keyword">hábitos</span>
+                y tu <span class="keyword">relación con la comida</span>.
+              </p>
             </div>
           </div>
 
-          <div class="d-flex why-choose xl-align-items-center mb-2-9">
+          <!-- Item 3 -->
+          <div class="d-flex why-choose align-items-center mb-2-9">
             <div class="icon-box-icon">
               <div class="icon-wrap -img">
-                <img src="https://yoga.websitelayout.net/img/icon/icon-3.png" alt="...">
+                <img src="https://yoga.websitelayout.net/img/icon/icon-3.png" alt="Planes hechos para ti">
               </div>
             </div>
             <div>
-              <h3 class="mt-2 h4">Planes hechos para ti</h3>
-              <p class="mb-0 w-sm-80">Nada genérico. Cada plan es personalizado según tus objetivos, tiempo y nivel actual.</p>
+              <h3 class="mt-2 h4"><span class="highlight">Planes hechos para ti</span></h3>
+              <p class="mb-0 w-sm-80">
+                Nada genérico. Diseñamos <span class="keyword">planes personalizados</span> según tus <span class="keyword">objetivos</span>,
+                <span class="keyword">tiempo</span> y <span class="keyword">nivel actual</span>.
+              </p>
             </div>
           </div>
 
-          <div class="d-flex why-choose xl-align-items-center">
+          <!-- Item 4 -->
+          <div class="d-flex why-choose align-items-center">
             <div class="icon-box-icon">
               <div class="icon-wrap -img">
-                <img src="https://yoga.websitelayout.net/img/icon/icon-4.png" alt="...">
+                <img src="https://yoga.websitelayout.net/img/icon/icon-4.png" alt="Comunidad y motivación">
               </div>
             </div>
             <div>
-              <h3 class="mt-2 h4">Comunidad y motivación</h3>
-              <p class="mb-0 w-sm-80">Accede a grupos privados donde compartimos logros, consejos y retos semanales.</p>
+              <h3 class="mt-2 h4"><span class="highlight">Comunidad y motivación</span></h3>
+              <p class="mb-0 w-sm-80">
+                Únete a una <span class="keyword">comunidad activa</span> donde compartimos logros, retos y motivación constante
+                para mantenerte <strong>enfocado y acompañado</strong>.
+              </p>
             </div>
           </div>
-
         </div>
       </div>
     </div>
   </div>
 </section>
 
+<!-- SECCIÓN: Diagnóstico gratuito -->
+<section class="bg-light position-relative diagnosis-section">
+  <div class="container">
+    <div class="row align-items-center mt-n1-9">
+      <div class="col-lg-6 mt-1-9 wow fadeIn" data-wow-delay="100ms">
+        <div class="pe-5">
+          <span class="sec-title3 text-secondary">Tu primer paso</span>
+          <h2 class="h1 font-weight-700 mb-1-9 title-diagnosis">
+            Haz tu <span class="accent">diagnóstico gratuito</span>
+          </h2>
 
-        <!-- PRICING
-        ================================================== -->
-        <!--section class="bg-light">   
-            <div class="container">
-                <div class="text-center">
-                    <span class="sec-title3 text-secondary">Pricing Packages</span>
-                    <h2 class="display-5 font-weight-700 mb-1-9 z-index-2 position-relative w-lg-70 w-xl-50 mx-lg-auto">Choose Price Plan</h2>
-                </div>
-                <div class="row g-xl-5 mt-n2-2">
-                    <div class="col-md-6 col-xl-4 mt-2-2">
-                        <div class="card card-style8">
-                            <div class="card-img-top bg-img cover-background theme-overlay-dark" data-overlay-dark="75" data-background="https://yoga.websitelayout.net/img/content/pricing-01.jpg">
-                                <div class=" position-relative z-index-9">
-                                    <div class="card-img-subtitle mb-3">
-                                        <span class="text-white">Basic Plan</span>
-                                    </div>
-                                    <div>
-                                        <span class="text-white display-7 font-weight-700">$ 29.99</span>
-                                        <span class="text-white">/ months(s)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <ul class="list-unstyled mb-1-9">
-                                    <li class="display-28 mb-3"><i class="fa-solid fa-seedling me-3"></i> Increases Flexibility</li>
-                                    <li class="display-28 mb-3"><i class="fa-solid fa-seedling me-3"></i>Make Healthier Life</li>
-                                    <li class="display-28 mb-3"><i class="fa-solid fa-seedling me-3"></i> To Build Strength</li>
-                                    <li class="display-28 mb-3 opacity5"><i class="fa-solid fa-seedling me-3"></i> Ease Stress & Anxiety</li>
-                                    <li class="display-28 mb-3 opacity5"><i class="fa-solid fa-seedling me-3"></i>25 Analytics Campaign</li>
-                                    <li class="display-28 mb-3 opacity5"><i class="fa-solid fa-seedling me-3"></i>1 Free Optimization</li>
-                                    <li class="display-28 opacity5"><i class="fa-solid fa-seedling me-3"></i> 25 Social Media Reviews</li>
-                                </ul>
-                                <a class="btn-style1 medium d-block" href="https://yoga.websitelayout.net/contact.html">Read More</a>
-                            </div>
-                        </div>
-                    </div>  
-                    <div class="col-md-6 col-xl-4 mt-2-2">
-                        <div class="card card-style8">
-                            <div class="card-img-top bg-img cover-background theme-overlay-dark" data-overlay-dark="75" data-background="https://yoga.websitelayout.net/img/content/pricing-02.jpg">
-                                <div class=" position-relative z-index-9">
-                                    <div class="card-img-subtitle mb-3">
-                                        <span class="text-white">Professional Plan</span>
-                                    </div>
-                                    <div>
-                                        <span class="text-white display-7 font-weight-700">$ 49.99</span>
-                                        <span class="text-white">/ months(s)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <ul class="list-unstyled mb-1-9">
-                                    <li class="display-28 mb-3"><i class="fa-solid fa-seedling me-3"></i> Increases Flexibility</li>
-                                    <li class="display-28 mb-3"><i class="fa-solid fa-seedling me-3"></i>Make Healthier Life</li>
-                                    <li class="display-28 mb-3"><i class="fa-solid fa-seedling me-3"></i> To Build Strength</li>
-                                    <li class="display-28 mb-3"><i class="fa-solid fa-seedling me-3"></i> Ease Stress & Anxiety</li>
-                                    <li class="display-28 mb-3"><i class="fa-solid fa-seedling me-3"></i>25 Analytics Campaign</li>
-                                    <li class="display-28 mb-3 opacity5"><i class="fa-solid fa-seedling me-3"></i>1 Free Optimization</li>
-                                    <li class="display-28 opacity5"><i class="fa-solid fa-seedling me-3"></i> 25 Social Media Reviews</li>
-                                </ul>
-                                <a class="btn-style1 medium d-block" href="https://yoga.websitelayout.net/contact.html">Read More</a>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="col-md-6 col-xl-4 mt-2-2">
-                        <div class="card card-style8">
-                            <div class="card-img-top bg-img cover-background theme-overlay-dark" data-overlay-dark="75" data-background="https://yoga.websitelayout.net/img/content/pricing-03.jpg">
-                                <div class=" position-relative z-index-9">
-                                    <div class="card-img-subtitle mb-3">
-                                        <span class="text-white">Enterprise Plan</span>
-                                    </div>
-                                    <div>
-                                        <span class="text-white display-7 font-weight-700">$ 69.99</span>
-                                        <span class="text-white">/ months(s)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <ul class="list-unstyled mb-1-9">
-                                    <li class="display-28 mb-3"><i class="fa-solid fa-seedling me-3"></i> Increases Flexibility</li>
-                                    <li class="display-28 mb-3"><i class="fa-solid fa-seedling me-3"></i>Make Healthier Life</li>
-                                    <li class="display-28 mb-3"><i class="fa-solid fa-seedling me-3"></i> To Build Strength</li>
-                                    <li class="display-28 mb-3"><i class="fa-solid fa-seedling me-3"></i> Ease Stress & Anxiety</li>
-                                    <li class="display-28 mb-3"><i class="fa-solid fa-seedling me-3"></i> 25 Analytics Campaign</li>
-                                    <li class="display-28 mb-3"><i class="fa-solid fa-seedling me-3"></i>1 Free Optimization</li>
-                                    <li class="display-28"><i class="fa-solid fa-seedling me-3"></i> 25 Social Media Reviews</li>
-                                </ul>
-                                <a class="btn-style1 medium d-block" href="https://yoga.websitelayout.net/contact.html">Read More</a>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
+          <p class="display-27">
+            Descubre tu <span class="keyword">perfil de bienestar</span> con un
+            <strong>diagnóstico personalizado</strong>, plan nutricional y
+            <span class="keyword">coaching adaptado a tus necesidades reales</span>.
+          </p>
+
+          <div class="contact-info border-bottom pb-1-9 mb-1-9">
+            <div class="d-flex align-items-center mb-2">
+              <i class="fa-solid fa-phone-flip display-28 me-3 accent"></i>
+              <p class="mb-0 display-28">(+44) 123 456 789</p>
             </div>
-        </section-->
-
-        <!-- TESTIMONIAL
-        ================================================== -->
-        <!--section class="bg-dark">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <span class="sec-title3 text-secondary">Testimonial</span>
-                    <h2 class="h1 font-weight-700 mb-0 z-index-2 position-relative text-white">What People Say?</h2>
-                </div>
-                <div class="row justify-content-center align-items-center text-center">
-                    <div class="col-lg-8">
-                        <div class="testimonial-carousel3 owl-carousel owl-theme owl-loaded owl-drag">
-                            <div>
-                                <i class="ti-quote-left display-10 text-primary mb-4 d-block"></i>
-
-                                <p class="mb-5 text-white display-28 display-md-26 display-lg-24">Coordination of activities improved tremendously with yoga. With yoga, we have finally accomplished things that have been waiting forever to get done.</p>
-
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div class="me-3">
-                                        <img src="https://yoga.websitelayout.net/img/avatars/avatar-17.jpg" class="rounded-circle" alt="Author Image">
-                                    </div>
-                                    <div class="text-start">
-                                        <h6 class="mb-0 text-white">Keith Ross</h6>
-
-                                        <span class="small text-white">Client of Company</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <i class="ti-quote-left display-10 text-primary mb-4 d-block"></i>
-
-                                <p class="mb-5 text-white display-28 display-md-26 display-lg-24">I highly recommend yoga. It has been so important for us as we continue to grow our company. We don’t need to spend as much time in meetings now that we use yoga.</p>
-
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div class="me-3">
-                                        <img src="https://yoga.websitelayout.net/img/avatars/avatar-18.jpg" class="rounded-circle" alt="Author Image">
-                                    </div>
-                                    <div class="text-start">
-                                        <h6 class="mb-0 text-white">Laura Loyau</h6>
-
-                                        <span class="small text-white">Client of Company</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <i class="ti-quote-left display-10 text-primary mb-4 d-block"></i>
-
-                                <p class="mb-5 text-white display-28 display-md-26 display-lg-24">I have been using yoga for over a year now and I love it! I can't imagine life without it. It's so easy to use, and the customer service is great.</p>
-
-                                <div class="d-flex justify-content-center align-items-center">
-                                    <div class="me-3">
-                                        <img src="https://yoga.websitelayout.net/img/avatars/avatar-19.jpg" class="rounded-circle" alt="Author Image">
-                                    </div>
-                                    <div class="text-start">
-                                        <h6 class="mb-0 text-white">Mikayla Woollard</h6>
-
-                                        <span class="small text-white">Client of Company</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-envelope display-28 me-3 accent"></i>
+              <p class="mb-0 display-28">info@example.com</p>
             </div>
-            <div class="position-absolute left-15 top-20 d-none d-md-block">
-                <img src="https://yoga.websitelayout.net/img/avatars/avatar-20.jpg" class="rounded-circle d-md-block d-none" alt="...">
-            </div>
-            <div class="position-absolute left-10 bottom-15 d-none d-md-block">
-                <img src="https://yoga.websitelayout.net/img/avatars/avatar-21.jpg" class="rounded-circle d-lg-block d-none" alt="...">
-            </div>
-            <div class="position-absolute right-5 top-10 d-none d-md-block">
-                <img src="https://yoga.websitelayout.net/img/avatars/avatar-22.jpg" class="rounded-circle w-70 d-md-block d-none" alt="...">
-            </div>
-            <div class="position-absolute right-20 bottom-25 d-none d-md-block">
-                <img src="https://yoga.websitelayout.net/img/avatars/avatar-23.jpg" class="rounded-circle d-xl-block d-none" alt="...">
-            </div>
-        </section-->
+          </div>
 
-        <!-- CONTACT US
-        ================================================== -->
-        <section class="bg-light position-relative">
-            <div class="container">
-                <div class="row align-items-center mt-n1-9">
-                    <div class="col-lg-6 mt-1-9 wow fadeIn" data-wow-delay="100ms">
-                        <div class="pe-5">
-                            <div>
-                                <span class="sec-title3 text-secondary">Get Quote</span>
-                                <h2 class="h1 font-weight-700 mb-1-9 z-index-2 position-relative">Request A Quote</h2>
-                            </div>
-                            <p class="display-27 ">We aim to empower individuals to take charge of their well-being through education</p>
-                            <div class="border-bottom pb-1-9 mb-1-9">
-                                <div class="d-flex align-items-center mb-2">
-                                    <div class="flex-shrink-0">
-                                        <div class="me-3">
-                                            <i class="fa-solid fa-phone-flip display-28"></i>
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        <p class="mb-0 display-28">(+44) 123 456 789</p>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <div class="flex-shrink-0">
-                                        <div class="me-3">
-                                            <i class="fa-solid fa-envelope display-28"></i>
-                                        </div>
-                                    </div>
-                                    <div class="flex-grow-1">
-                                        <p class="mb-0 display-28">info@example.com</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="text-primary display-26 font-weight-700">Mon – Fri : 12.00 – 20:00 / Sat – Sun : 09:00 – 15:00</p>
-                            <address class="mb-0 display-md-29 display-xl-28">New York — <br> 18 N 3rd E Street Downey,<br>Lechase Park, United States.</address>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 mt-1-9 wow fadeIn" data-wow-delay="200ms">
-                        <div class="contact-from rounded">
-                            <span class="sec-title3 text-secondary">Contact us</span>
-                            <h2 class="h1 font-weight-700 mb-1-9 z-index-2 position-relative">Get In Touch</h2>
-                            <form class="contact quform" action="https://yoga.websitelayout.net/quform/contact.php" method="post" enctype="multipart/form-data" onclick="">
-                                <div class="quform-elements">
-                                    <div class="row">
+          <p class="text-primary display-26 font-weight-700 schedule">
+            Lunes – Viernes: 12:00 – 20:00 <br>
+            Sábado – Domingo: 09:00 – 15:00
+          </p>
+          <address class="mb-0 display-md-29 display-xl-28">
+            <strong>New York</strong> — <br>
+            18 N 3rd E Street Downey, <br>
+            Lechase Park, United States.
+          </address>
 
-                                        <!-- Begin Text input element -->
-                                        <div class="col-md-6">
-                                            <div class="quform-element form-group">
-                                                <label for="name">Your Name <span class="quform-required">*</span></label>
-                                                <div class="quform-input">
-                                                    <input class="form-control" id="name" type="text" name="name" placeholder="Your name here" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Text input element -->
+          <a href="#" class="btn-cta mt-3">Quiero mi diagnóstico</a>
+        </div>
+      </div>
 
-                                        <!-- Begin Text input element -->
-                                        <div class="col-md-6">
-                                            <div class="quform-element form-group">
-                                                <label for="email">Your Email <span class="quform-required">*</span></label>
-                                                <div class="quform-input">
-                                                    <input class="form-control" id="email" type="text" name="email" placeholder="Your email here" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Text input element -->
-
-                                        <!-- Begin Text input element -->
-                                        <div class="col-md-6">
-                                            <div class="quform-element form-group">
-                                                <label for="subject">Your Subject <span class="quform-required">*</span></label>
-                                                <div class="quform-input">
-                                                    <input class="form-control" id="subject" type="text" name="subject" placeholder="Your subject here" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Text input element -->
-
-                                        <!-- Begin Text input element -->
-                                        <div class="col-md-6">
-                                            <div class="quform-element form-group">
-                                                <label for="phone">Contact Number</label>
-                                                <div class="quform-input">
-                                                    <input class="form-control" id="phone" type="text" name="phone" placeholder="Your phone here" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Text input element -->
-
-                                        <!-- Begin Textarea element -->
-                                        <div class="col-md-12">
-                                            <div class="quform-element form-group">
-                                                <label for="message">Message <span class="quform-required">*</span></label>
-                                                <div class="quform-input">
-                                                    <textarea class="form-control" id="message" name="message" rows="3" placeholder="Tell us a few words"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Textarea element -->
-
-                                        <!-- Begin Captcha element -->
-                                        <div class="col-md-12">
-                                            <div class="quform-element">
-                                                <div class="form-group">
-                                                    <div class="quform-input">
-                                                        <input class="form-control" id="type_the_word" type="text" name="type_the_word" placeholder="Type the below word" />
-                                                    </div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="quform-captcha">
-                                                        <div class="quform-captcha-inner">
-                                                            <img src="https://yoga.websitelayout.net/quform/images/captcha/courier-new-light.png" alt="...">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- End Captcha element -->
-
-                                        <!-- Begin Submit button -->
-                                        <div class="col-md-12">
-                                            <div class="quform-submit-inner">
-                                                <button class="btn-style1 primary" type="submit">Send Message</button>
-                                            </div>
-                                            <div class="quform-loading-wrap text-start"><span class="quform-loading"></span></div>
-                                        </div>
-                                        <!-- End Submit button -->
-
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="position-absolute top-n25 left-n10 d-none d-lg-block">
-                <img src="https://yoga.websitelayout.net/img/content/flower01.png" class="opacity2" alt="...">
-            </div>
-        </section>
+      <div class="col-lg-6 mt-1-9 wow fadeIn" data-wow-delay="200ms">
+        <div class="contact-from rounded text-center">
+          <img src="https://yoga.websitelayout.net/img/content/flower01.png" class="opacity3 mb-3 w-50" alt="Decoración floral">
+          <p class="display-27">
+            Da el primer paso hacia tu <span class="highlight">mejor versión</span>.  
+            Agenda tu diagnóstico sin costo y descubre cómo podemos ayudarte.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         <!-- FOOTER
         ================================================== -->
-        <footer class="position-relative">
-            <div class="footer-top position-relative pt-6 pt-md-8 pt-lg-10 pt-xl-12">
-                <div class="container z-index-9 position-relative">
-                    <div class="row pb-6 pb-lg-8 mt-n1-9">
-                        <div class="col-md-6 col-lg-3 mt-1-9">
-                            <div class="pe-xl-3">
-                                <div class="mb-1-6 footer-logo">
-                                    <a href="index.html">
-                                        <img src="" alt="...">
-                                    </a>
-                                </div>
-                                <div>
-                                    <div class="d-flex mb-2">
-                                        <p class="d-inline-block mb-0"><a href="#!" class="text-white opacity8"><i class="fa-solid fa-location-dot me-3"></i></a></p>
-                                        <p class="mb-0 d-inline-block text-white opacity8">66 Guild Street 512B, Great North Town.</p>
-                                    </div>
-                                    <div class="d-flex mb-2">
-                                        <p class="d-inline-block mb-0"><a href="#!" class="text-white opacity8"><i class="fa-solid fa-phone-flip me-3"></i></a></p>
-                                        <p class="mb-0 d-inline-block"><a href="#!" class="text-white opacity8">(+44) 123 456 789</a></p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <p class="d-inline-block mb-0"><a href="#!" class="text-white opacity8"><i class="fa-solid fa-envelope me-3"></i></a></p>
-                                        <p class="mb-0 d-inline-block"><a href="#!" class="text-white opacity8">info@example.com</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 mt-1-9">
-                            <div class="ps-lg-5">
-                                <h3 class="text-secondary h6 letter-spacing-2 mb-2-2 text-uppercase">Useful Link</h3>
-                                <ul class="list-unstyled list-style1 mb-0">
-                                    <li class="mb-3"><a href="about.html" class="text-white opacity8">About Us</a></li>
-                                    <li class="mb-3"><a href="history.html" class="text-white opacity8">History</a></li>
-                                    <li class="mb-3"><a href="services.html" class="text-white opacity8">Services</a></li>
-                                    <li class="mb-3"><a href="pricing-plans.html" class="text-white opacity8">Pricing Plan</a></li>
-                                    <li class="mb-0"><a href="contact.html" class="text-white opacity8">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 mt-1-9">
-                            <div>
-                                <h3 class="text-secondary h6 letter-spacing-2 mb-2-2 text-uppercase">Classes</h3>
-                                <ul class="list-unstyled list-style1 mb-0">
-                                    <li class="mb-3"><a href="#!" class="text-white opacity8">Fat burn</a></li>
-                                    <li class="mb-3"><a href="#!" class="text-white opacity8">Cycling</a></li>
-                                    <li class="mb-3"><a href="#!" class="text-white opacity8">Stretching</a></li>
-                                    <li class="mb-3"><a href="#!" class="text-white opacity8">Weight Loss</a></li>
-                                    <li class="mb-0"><a href="#!" class="text-white opacity8">Build Muscle</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mt-1-9">
-                            <div>
-                                <h3 class="text-secondary h6 letter-spacing-2 mb-2-2 text-uppercase">Get News</h3>
-                                <p class="text-white opacity8">Subscribe to our newsletter to receive updates on the latest news!</p>
-                                <form class="quform newsletter-rounded" action="https://yoga.websitelayout.net/quform/newsletter-two.php" method="post" enctype="multipart/form-data" onclick="">
-                                    <div class="quform-elements">
+       <footer class="bg-dark text-white py-10">
+  <div class="container">
+    <div class="row align-items-center border-bottom pb-4 mb-5">
+      <!-- Logo -->
+      <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+        <a href="index.html" class="d-inline-block">
+          <img src="assets/images/logo-light.png" alt="Logo" class="img-fluid" style="max-height: 60px;">
+        </a>
+      </div>
 
-                                        <div class="row">
+      <!-- Menu -->
+      <div class="col-lg-8 text-center text-lg-end">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item me-4"><a href="index.html" class="text-white opacity-75 hover-opacity">Inicio</a></li>
+          <li class="list-inline-item me-4"><a href="history.html" class="text-white opacity-75 hover-opacity">Perfil Bienestar</a></li>
+          <li class="list-inline-item me-4"><a href="services.html" class="text-white opacity-75 hover-opacity">Planes</a></li>
+          <li class="list-inline-item me-4"><a href="event-details.html" class="text-white opacity-75 hover-opacity">Reto 21 Días</a></li>
+          <li class="list-inline-item"><a href="blog-grid.html" class="text-white opacity-75 hover-opacity">Blog</a></li>
+        </ul>
+      </div>
+    </div>
 
-                                            <!-- Begin Text input element -->
-                                            <div class="col-md-12">
-                                                <div class="quform-element m-0">
-                                                    <div class="quform-input">
-                                                        <input class="rounded-pill form-control" id="email_address" type="text" name="email_address" placeholder="Subscribe with us" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End Text input element -->
+    <!-- Info blocks -->
+    <div class="row g-4 mb-5">
+      <!-- Horarios -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Horario de atención</h5>
+        <p class="opacity-75 mb-1">Lunes a Viernes: 9:00 a.m. – 6:00 p.m.</p>
+        <p class="opacity-75 mb-1">Sábados: 10:00 a.m. – 2:00 p.m.</p>
+        <p class="opacity-75">Domingos: Cerrado</p>
+      </div>
 
-                                            <!-- Begin Submit button -->
-                                            <div class="col-md-12">
-                                                <div class="quform-submit-inner">
-                                                    <button class="btn btn-white text-primary m-0 px-4" type="submit"><i class="fas fa-paper-plane"></i></button>
-                                                </div>
-                                                <div class="quform-loading-wrap"><span class="quform-loading"></span></div>
-                                            </div>
-                                            <!-- End Submit button -->
+      <!-- Contacto -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Contáctanos</h5>
+        <p class="opacity-75 mb-1"><a href="mailto:contacto@.com" class="text-white opacity-75 hover-opacity">contacto@.com</a></p>
+        <p class="opacity-75 mb-1"><a href="tel:+51999999999" class="text-white opacity-75 hover-opacity">+51 999 999 999</a></p>
+        <p class="opacity-75">Av. Salud Integral 101, Lima, Perú</p>
+      </div>
 
-                                        </div>
+      <!-- Newsletter -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Suscríbete</h5>
+        <p class="opacity-75">Recibe consejos, recetas y rutinas directamente en tu correo.</p>
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control rounded-start-pill" placeholder="Ingresa tu correo">
+            <button class="btn btn-primary rounded-end-pill" type="submit">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
 
-                                    </div>
-
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom z-index-9 position-relative">
-                <div class="container position-relative z-index-9">
-                    <div class="row align-items-center py-4">
-                        <div class="col-md-7 col-lg-6 text-center text-md-start order-2 order-md-1">
-                            <p class="d-inline-block text-white mb-0">
-                            &copy; <span class="current-year"></span> All rights reserved by <a href="#!" class="text-secondary text-primary-hover">Chitrakoot Web</a></p>
-                        </div>
-                        <div class="col-md-5 col-lg-6 text-center text-md-end mb-3 mb-md-0 order-1 order-md-2">
-                            <ul class="social-icon-style1 me-xl-12">
-                                <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#!"><i class="fab fa-youtube"></i></a></li>
-                                <li><a href="#!"><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    <!-- Copyright -->
+    <div class="text-center border-top pt-4 opacity-75">
+      <p class="mb-0">&copy; <span class="current-year"></span> Todos los derechos reservados. Desarrollado por <strong>@</strong></p>
+    </div>
+  </div>
+</footer>
 
         <!-- cursor helper -->
         <div class="cursor-helper">

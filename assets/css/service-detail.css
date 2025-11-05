@@ -1,0 +1,127 @@
+/* ====== SERVICE DETAIL – Visual limpio con acento azul ====== */
+:root{
+  --accent:#4C6FFF;        /* azul principal */
+  --accent-600:#3B57CC;    /* hover */
+  --accent-700:#2F43A6;    /* active */
+  --ink:#1F2937;           /* texto principal */
+  --muted:#5B6470;         /* texto secundario */
+  --divider:#E7EAF0;       /* líneas suaves */
+}
+
+/* Ajuste de imagen izquierda */
+#plan-image{
+  background-size: cover;
+  background-position: center;
+  transition: transform .6s ease, filter .6s ease;
+  filter: saturate(1) contrast(1);
+}
+#plan-image:hover{ transform: scale(1.01); }
+
+/* Contenedor derecho */
+.why-choose-02{
+  background: #F8FAFD;                  /* gris muy leve (no blanco puro) */
+  border-left: 1px solid var(--divider);
+}
+
+/* Título superior del plan */
+#plan-title{
+  display:block;
+  font-weight:800;
+  color:var(--ink);
+  letter-spacing:.5px;
+  text-transform:uppercase;
+  margin-bottom:1.25rem;
+  position:relative;
+}
+#plan-title::after{
+  content:"";
+  display:block;
+  width:56px;height:3px;
+  background:var(--accent);
+  margin-top:10px;
+  border-radius:3px;
+}
+
+/* Subtítulos fijos (“Acompañamiento profesional”, etc.) */
+.why-choose h3{
+  color:var(--ink);
+  font-weight:700;
+}
+
+/* Copy principal */
+#plan-description{
+  color:var(--muted);
+  font-size:1.02rem;
+  line-height:1.85;
+}
+#plan-description p{ margin-bottom:1rem; }
+
+/* Resaltado elegante (sin fondos) */
+#plan-description .highlight{
+  color:var(--accent);
+  font-weight:700;
+}
+#plan-description .keyword{
+  color:var(--ink);
+  font-weight:700;
+}
+
+/* Lista de beneficios: bullets discretos y labels sin fondo */
+#plan-description ul{
+  margin:.25rem 0 1.25rem 0;
+  padding-left:0;
+  list-style:none;
+}
+#plan-description li{
+  position:relative;
+  padding-left:1.4rem;
+  margin:.35rem 0;
+  color:var(--ink);
+}
+#plan-description li::before{
+  content:"";
+  position:absolute; left:.15rem; top:.82rem;
+  width:.45rem; height:.45rem;
+  border-radius:50%;
+  background:var(--accent);
+  box-shadow: 0 0 0 3px rgba(76,111,255,.12); /* halo suave */
+  transform: translateY(-50%);
+}
+#plan-description .label{
+  font-weight:700;
+  color:var(--ink);
+  margin-right:.25rem;
+}
+
+/* Botón primario en azul */
+.btn-style1.primary{
+  background:var(--accent);
+  color:#fff;
+  border:none;
+  border-radius:999px;
+  padding:.95rem 1.4rem;
+  font-weight:800;
+  letter-spacing:.2px;
+  box-shadow: 0 8px 20px rgba(76,111,255,.25);
+  transition: all .25s ease;
+}
+.btn-style1.primary:hover{
+  background:var(--accent-600);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(76,111,255,.35);
+}
+.btn-style1.primary:active{
+  background:var(--accent-700);
+  transform: translateY(0);
+}
+
+/* Iconos del bloque fijo */
+.icon-wrap.-img img{
+  filter: grayscale(0) brightness(.95);
+  opacity:.9;
+}
+
+/* Separación general en desktop */
+@media (min-width:992px){
+  .why-choose-02{ padding-top:3rem; padding-bottom:3rem; }
+}
