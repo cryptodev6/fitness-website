@@ -4535,3 +4535,17 @@ section.features {
     }
 }
 
+.btn-cta {
+  display: inline-block;
+  background: linear-gradient(135deg, #4C6FFF 0%, #2F5AFF 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  padding: 0.9rem 2.2rem;
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(76, 111, 255, 0.35);
+  transition: all 0.25s ease-in-out;
+  color: #d9d9d9 !important;
+}
