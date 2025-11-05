@@ -1,0 +1,454 @@
+/* =============================
+  🎨 ESTILOS PERSONALIZADOS INDEX
+  Autor: Herbert Corazao
+  Propósito: Sobrescribir el CSS base con un diseño más moderno,
+  limpio y aspiracional (coaching + fitness premium)
+============================= */
+
+/* ===== Colores base ===== */
+:root {
+  --color-primary: #6a63ff;       /* Lila fuerte premium */
+  --color-accent: #9a8cff;        /* Acento más suave */
+  --color-dark: #1f1f1f;
+  --color-light: #ffffff;
+  --color-bg-soft: #f8f8ff;
+  --shadow-soft: 0 8px 25px rgba(106, 99, 255, 0.08);
+}
+
+/* ===== Efectos generales ===== */
+.highlight {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.keyword {
+  color: var(--color-dark);
+  font-weight: 600;
+}
+
+.section-title {
+  font-weight: 800;
+  color: var(--color-dark);
+  font-size: 2.2rem;
+  line-height: 1.3;
+}
+
+.section-subtitle {
+  max-width: 680px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.05rem;
+  color: #6b6b6b;
+}
+
+.badge-title {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 100px;
+  padding: 6px 18px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+/* ===============================
+   HERO BANNER — LEGIBILIDAD MEJORADA
+=============================== */
+
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner .item {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Capa de oscurecimiento para fondo */
+.hero-banner .bg-img::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(180deg, rgba(15, 15, 20, 0.55) 0%, rgba(15, 15, 20, 0.85) 100%);
+  z-index: 1;
+}
+
+/* Contenedor del contenido */
+.banner-content {
+  position: relative;
+  z-index: 3;
+  color: #fff !important;
+  max-width: 750px;
+  text-align: left;
+  animation: fadeInUp 1s ease both;
+}
+
+/* Subtítulo */
+.hero-subtitle {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9) !important;
+  display: inline-block;
+  margin-bottom: 1rem;
+  border-left: 3px solid var(--color-primary);
+  padding-left: 12px;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Título principal */
+.hero-title {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #ffffff !important;
+  text-shadow: 0 6px 25px rgba(0, 0, 0, 0.65);
+}
+
+/* Resaltado dentro del título */
+.hero-title .highlight {
+  color: #ffffff !important;
+  background: linear-gradient(90deg, #b8b8ff, #6a63ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+/* Texto descriptivo */
+.hero-text {
+  font-size: 1.15rem;
+  color: rgba(255, 255, 255, 0.92) !important;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+}
+
+/* Botón principal */
+.btn-hero {
+  background: var(--color-primary);
+  border-radius: 100px;
+  color: #fff !important;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.9rem 2.4rem;
+  box-shadow: 0 10px 30px rgba(106, 99, 255, 0.45);
+  transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+  background: var(--color-accent);
+  box-shadow: 0 14px 40px rgba(106, 99, 255, 0.55);
+  transform: translateY(-3px);
+}
+
+/* Animaciones suaves */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(25px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .hero-text {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .hero-subtitle {
+    text-align: center;
+    margin-left: 0;
+  }
+  .banner-content {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+
+/* ===== Features ===== */
+.features {
+  background: var(--color-bg-soft);
+  padding: 6rem 0 5rem;
+}
+
+.feature-item {
+  background: var(--color-light);
+  border-radius: 20px;
+  box-shadow: var(--shadow-soft);
+  padding: 2rem 1.2rem;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(106, 99, 255, 0.15);
+}
+
+.feature-item h4 {
+  color: var(--color-dark);
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.feature-item p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 0.7rem;
+}
+
+.icon-wrap img {
+  width: 58px;
+  height: 58px;
+  filter: drop-shadow(0 3px 5px rgba(106, 99, 255, 0.2));
+}
+
+/* ===== Cards de Planes ===== */
+.card-style6 {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card-style6:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(106, 99, 255, 0.2);
+}
+
+.card-style6 img {
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.card-style6 .card-body {
+  padding: 1.5rem;
+}
+
+.card-style6 h3 a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.card-style6 h3 a:hover {
+  color: var(--color-dark);
+}
+
+.card-style6 p {
+  color: #555;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+/* ===== Testimonios ===== */
+.section-testimonials {
+  background: linear-gradient(180deg, #f7f7ff 0%, #ffffff 100%);
+  padding: 6rem 0 5rem;
+  position: relative;
+}
+
+.testimonial-slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.testimonial-item {
+  background: #fff;
+  border-radius: 18px;
+  padding: 2rem 1.5rem;
+  box-shadow: var(--shadow-soft);
+  max-width: 350px;
+  transition: all 0.3s ease;
+}
+
+.testimonial-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(106, 99, 255, 0.2);
+}
+
+.testimonial-text {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.testimonial-author {
+  margin-top: 1.5rem;
+}
+
+.testimonial-author img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid var(--color-primary);
+  object-fit: cover;
+}
+
+.testimonial-author .author-name {
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-top: 0.6rem;
+}
+
+.testimonial-author .author-role {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* ===== Blog / Coaches ===== */
+.section-blog {
+  background: #fff;
+  padding: 6rem 0 6rem;
+}
+
+.blog-card {
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.35s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(106, 99, 255, 0.2);
+}
+
+.blog-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.blog-img img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.blog-card:hover .blog-img img {
+  transform: scale(1.05);
+}
+
+.blog-date {
+  position: absolute;
+  bottom: -16px;
+  right: 20px;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 14px;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  box-shadow: 0 5px 15px rgba(106, 99, 255, 0.3);
+}
+
+.blog-content {
+  padding: 2rem 1.5rem;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.blog-category {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  font-size: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+.blog-title a {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--color-dark);
+  transition: all 0.3s ease;
+}
+
+.blog-title a:hover {
+  color: var(--color-primary);
+}
+
+.blog-content p {
+  color: #666;
+  margin: 0.8rem 0 1.2rem;
+  font-size: 0.93rem;
+  line-height: 1.5;
+}
+
+.btn-read {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn-read:hover {
+  color: var(--color-dark);
+  text-decoration: underline;
+}
+
+/* ===== Botones generales ===== */
+.btn-style1,
+.btn-style1.primary {
+  background: var(--color-primary) !important;
+  border: none;
+  border-radius: 100px;
+  padding: 0.75rem 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px rgba(106, 99, 255, 0.3);
+}
+
+.btn-style1:hover {
+  background: var(--color-accent) !important;
+  box-shadow: 0 6px 20px rgba(106, 99, 255, 0.35);
+}
+
+/* ===== Animaciones suaves ===== */
+.wow {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Responsividad ===== */
+@media (max-width: 991px) {
+  .section-title { font-size: 1.9rem; }
+  .feature-item { margin-bottom: 1.5rem; }
+  .blog-card { margin-bottom: 2rem; }
+}
