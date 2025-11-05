@@ -1,0 +1,109 @@
+/* ====== SECCIÓN PLANES ====== */
+.section-plans {
+  padding: 5rem 0;
+}
+
+.plans-title {
+  font-weight: 800;
+  font-size: 2.3rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+.plans-title span {
+  color: #4C6FFF;
+}
+
+.plans-subtitle {
+  color: #6B7280;
+  font-size: 1.05rem;
+  margin-bottom: 3rem;
+}
+
+/* === Tarjetas === */
+.plan-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: all 0.35s ease;
+}
+.plan-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(76,111,255,0.12);
+}
+
+.plan-card img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+
+.plan-title a {
+  font-size: 1.4rem;
+  color: #1f2937;
+  font-weight: 700;
+  text-decoration: none;
+}
+.plan-title span {
+  position: relative;
+}
+.plan-title span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #4C6FFF, #6B9FFF);
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+.plan-card:hover .plan-title span::after {
+  opacity: 0.9;
+}
+
+.plan-desc {
+  font-size: 0.98rem;
+  color: #4B5563;
+  line-height: 1.65;
+  margin: 1rem 0 1.8rem;
+}
+.plan-desc .highlight {
+  color: #4C6FFF;
+  font-weight: 600;
+}
+
+/* === BOTÓN CALL TO ACTION (Corregido y mejorado) === */
+.btn-cta {
+  display: inline-block;
+  background: linear-gradient(135deg, #4C6FFF 0%, #2F5AFF 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.4px;
+  padding: 0.9rem 2.2rem;
+  border-radius: 40px;
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(76, 111, 255, 0.35);
+  transition: all 0.25s ease-in-out;
+  color: #d9d9d9 !important;
+}
+
+.btn-cta:hover {
+  background: linear-gradient(135deg, #2F5AFF 0%, #1E3AFF 100%);
+  box-shadow: 0 10px 25px rgba(47, 90, 255, 0.45);
+  transform: translateY(-3px);
+}
+
+.btn-cta:active {
+  background: #1E3AFF;
+  transform: translateY(0);
+  box-shadow: 0 6px 14px rgba(47, 90, 255, 0.4);
+}
+
+
+/* === Responsive === */
+@media (max-width: 991px) {
+  .plans-title { font-size: 1.9rem; }
+  .plan-desc { font-size: 0.95rem; }
+  .btn-cta { font-size: 0.95rem; padding: 0.8rem 1.5rem; }
+}
