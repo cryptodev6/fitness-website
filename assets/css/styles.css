@@ -4535,7 +4535,6 @@ section.features {
     }
 }
 
-<<<<<<< HEAD
 /* what we offer*/
 .offer-hero {
     position: relative;
@@ -4627,19 +4626,103 @@ header .navbar {
 }
 
 
-=======
-.btn-cta {
-  display: inline-block;
-  background: linear-gradient(135deg, #4C6FFF 0%, #2F5AFF 100%);
-  color: #fff;
-  font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: 0.4px;
-  padding: 0.9rem 2.2rem;
-  border-radius: 40px;
-  text-decoration: none;
-  box-shadow: 0 8px 20px rgba(76, 111, 255, 0.35);
-  transition: all 0.25s ease-in-out;
-  color: #d9d9d9 !important;
+
+/*footer index*/
+footer {
+  background-color: #0d0d0d; 
 }
->>>>>>> f7f6044f32350148a05f6d2dd2fb349ae0da7a5d
+
+footer .hover-opacity:hover {
+  opacity: 1 !important;
+}
+
+footer .hover-opacity {
+  transition: opacity 0.25s ease-in-out;
+}
+
+footer h5 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer .input-group input {
+  border: none;
+  padding: 12px 15px;
+  font-size: 0.95rem;
+}
+
+footer .input-group .btn {
+  font-weight: 600;
+}
+
+footer .input-group input:focus {
+  box-shadow: none !important;
+}
+
+footer .list-inline-item a {
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+footer .opacity-75 {
+  opacity: 0.75 !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  footer .list-inline-item {
+    display: block;
+    margin: 6px 0;
+  }
+}
+
+/* Button color suggestion (Fitness vibe) */
+.btn-primary {
+  background-color: #18d26e !important;
+  border-color: #18d26e !important;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.15);
+}
+
+/* Fade animation for footer */
+footer {
+  animation: fadeInUp 0.7s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Logo scroll swap */
+.sticky-top.scrolled #logo-default { display: none; }
+.sticky-top.scrolled #logo-scroll { display: block !important; }
+
+/* Navbar links */
+.navbar .nav-link {
+    color: #111;
+    padding: 0.75rem 1rem;
+    transition: .2s;
+}
+
+.navbar .nav-link:hover {
+    color: var(--bs-primary);
+}
+
+/* Top bar */
+.top-bar i {
+    opacity: .8;
+}
+
+/* Smooth shadow on scroll */
+header.sticky-active {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
