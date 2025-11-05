@@ -49,63 +49,61 @@
 
         <!-- HEADER
         ================================================== -->
-        <header class="header-style1 menu_area-light">
-            <div class="navbar-default">
+       <header class="header-modern shadow-sm">
 
-                <!-- start top search -->
-                <div class="top-search bg-secondary">
-                    <div class="container-fluid px-lg-1-6 px-xl-2-5 px-xxl-2-9">
-                        <form class="search-form"  method="GET" accept-charset="utf-8">
-                            <div class="input-group">
-                                <span class="input-group-addon cursor-pointer">
-                                    <button class="search-form_submit fas fa-search text-white" type="submit"></button>
-                                </span>
-                                <input type="text" class="search-form_input form-control" name="s" autocomplete="off" placeholder="Type & hit enter...">
-                                <span class="input-group-addon close-search mt-1"><i class="fas fa-times"></i></span>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <!-- end top search -->
+    <!-- Top bar -->
+    <div class="top-bar bg-primary text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            
+            <!-- Contact -->
+            <ul class="list-inline mb-0 small">
+                <li class="list-inline-item me-3"><i class="ti-mobile me-1"></i> +57 300 000 0000</li>
+                <li class="list-inline-item d-none d-md-inline"><i class="ti-email me-1"></i> bienestar@fitlife.com</li>
+            </ul>
 
-                <div class="container-fluid px-lg-1-6 px-xl-2-5 px-xxl-2-9">
-                    <div class="row align-items-center">
-                        <div class="col-12 col-lg-12">
-                            <div class="menu_area alt-font">
-                                <nav class="navbar navbar-expand-lg navbar-light p-0">
-                                    <div class="navbar-header navbar-header-custom">
-                                        <!-- start logo -->
-                                        <a href="index.html" class="navbar-brand"><img id="logo" src="" alt="logo"></a>
-                                        <!-- end logo -->
-                                    </div>
+            <!-- Social -->
+            <ul class="list-inline mb-0 small">
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
 
-                                    <div class="navbar-toggler"></div>
+        </div>
+    </div>
 
-                                    <!-- start menu area -->
-                                    <ul class="navbar-nav ms-auto" id="nav">
-                                      <li><a href="index.html">Inicio</a></li>
-                                      <li><a href="history.html">Perfil Bienestar</a></li>
-                                      <li><a href="services.html">Planes</a></li>
-                                      <li><a href="event-details.html">Reto 21 Días</a></li>
-                                      <li><a href="blog-grid.html">Blog</a></li>
-                                    </ul>
-                                    <!-- end menu area -->
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white py-3 sticky-top">
+        <div class="container">
 
-                                    <!-- start attribute navigation -->
-                                    <div class="attr-nav align-items-xl-center ms-xl-auto main-font">
-                                        <ul>
-                                            <li class="search"><a href="#!"><i class="fas fa-search"></i></a></li>
-                                            <li class="d-none d-xl-inline-block"><a href="contact.html" class="btn-style1 primary medium text-white">Free Quote</a></li>
-                                        </ul>
-                                    </div>
-                                    <!-- end attribute navigation -->
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo-light.png" id="logo-default" alt="Logo" height="42">
+                <img src="assets/img/logo-dark.png" id="logo-scroll" alt="Logo" height="42" class="d-none">
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">Perfil Bienestar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Planes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="event-details.html">Reto 21 Días</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog</a></li>
+                </ul>
+
+                <a href="contact.html" class="btn btn-primary rounded-pill ms-lg-4 fw-bold px-4">
+                    Agenda tu llamada
+                </a>
             </div>
-        </header>
+        </div>
+    </nav>
+
+</header>
+
 
 
         <!-- OUR SERVICES
@@ -320,114 +318,67 @@
 
         <!-- FOOTER
         ================================================== -->
-        <footer class="position-relative">
-            <div class="footer-top position-relative pt-6 pt-md-8 pt-lg-10 pt-xl-12">
-                <div class="container z-index-9 position-relative">
-                    <div class="row pb-6 pb-lg-8 mt-n1-9">
-                        <div class="col-md-6 col-lg-3 mt-1-9">
-                            <div class="pe-xl-3">
-                                <div class="mb-1-6 footer-logo">
-                                    <a href="index.html">
-                                        <img src="" alt="...">
-                                    </a>
-                                </div>
-                                <div>
-                                    <div class="d-flex mb-2">
-                                        <p class="d-inline-block mb-0"><a href="#!" class="text-white opacity8"><i class="fa-solid fa-location-dot me-3"></i></a></p>
-                                        <p class="mb-0 d-inline-block text-white opacity8">66 Guild Street 512B, Great North Town.</p>
-                                    </div>
-                                    <div class="d-flex mb-2">
-                                        <p class="d-inline-block mb-0"><a href="#!" class="text-white opacity8"><i class="fa-solid fa-phone-flip me-3"></i></a></p>
-                                        <p class="mb-0 d-inline-block"><a href="#!" class="text-white opacity8">(+44) 123 456 789</a></p>
-                                    </div>
-                                    <div class="d-flex">
-                                        <p class="d-inline-block mb-0"><a href="#!" class="text-white opacity8"><i class="fa-solid fa-envelope me-3"></i></a></p>
-                                        <p class="mb-0 d-inline-block"><a href="#!" class="text-white opacity8">info@example.com</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 mt-1-9">
-                            <div class="ps-lg-5">
-                                <h3 class="text-secondary h6 letter-spacing-2 mb-2-2 text-uppercase">Useful Link</h3>
-                                <ul class="list-unstyled list-style1 mb-0">
-                                    <li class="mb-3"><a href="about.html" class="text-white opacity8">About Us</a></li>
-                                    <li class="mb-3"><a href="history.html" class="text-white opacity8">History</a></li>
-                                    <li class="mb-3"><a href="services.html" class="text-white opacity8">Services</a></li>
-                                    <li class="mb-3"><a href="pricing-plans.html" class="text-white opacity8">Pricing Plan</a></li>
-                                    <li class="mb-0"><a href="contact.html" class="text-white opacity8">Contact</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-3 mt-1-9">
-                            <div>
-                                <h3 class="text-secondary h6 letter-spacing-2 mb-2-2 text-uppercase">Classes</h3>
-                                <ul class="list-unstyled list-style1 mb-0">
-                                    <li class="mb-3"><a href="#!" class="text-white opacity8">Fat burn</a></li>
-                                    <li class="mb-3"><a href="#!" class="text-white opacity8">Cycling</a></li>
-                                    <li class="mb-3"><a href="#!" class="text-white opacity8">Stretching</a></li>
-                                    <li class="mb-3"><a href="#!" class="text-white opacity8">Weight Loss</a></li>
-                                    <li class="mb-0"><a href="#!" class="text-white opacity8">Build Muscle</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-3 mt-1-9">
-                            <div>
-                                <h3 class="text-secondary h6 letter-spacing-2 mb-2-2 text-uppercase">Get News</h3>
-                                <p class="text-white opacity8">Subscribe to our newsletter to receive updates on the latest news!</p>
-                                <form class="quform newsletter-rounded" action="https://yoga.websitelayout.net/quform/newsletter-two.php" method="post" enctype="multipart/form-data" onclick="">
-                                    <div class="quform-elements">
+       <footer class="bg-dark text-white py-10">
+  <div class="container">
+    <div class="row align-items-center border-bottom pb-4 mb-5">
+      <!-- Logo -->
+      <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+        <a href="index.html" class="d-inline-block">
+          <img src="assets/images/logo-light.png" alt="Logo" class="img-fluid" style="max-height: 60px;">
+        </a>
+      </div>
 
-                                        <div class="row">
+      <!-- Menu -->
+      <div class="col-lg-8 text-center text-lg-end">
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item me-4"><a href="index.html" class="text-white opacity-75 hover-opacity">Inicio</a></li>
+          <li class="list-inline-item me-4"><a href="history.html" class="text-white opacity-75 hover-opacity">Perfil Bienestar</a></li>
+          <li class="list-inline-item me-4"><a href="services.html" class="text-white opacity-75 hover-opacity">Planes</a></li>
+          <li class="list-inline-item me-4"><a href="event-details.html" class="text-white opacity-75 hover-opacity">Reto 21 Días</a></li>
+          <li class="list-inline-item"><a href="blog-grid.html" class="text-white opacity-75 hover-opacity">Blog</a></li>
+        </ul>
+      </div>
+    </div>
 
-                                            <!-- Begin Text input element -->
-                                            <div class="col-md-12">
-                                                <div class="quform-element m-0">
-                                                    <div class="quform-input">
-                                                        <input class="rounded-pill form-control" id="email_address" type="text" name="email_address" placeholder="Subscribe with us" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- End Text input element -->
+    <!-- Info blocks -->
+    <div class="row g-4 mb-5">
+      <!-- Horarios -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Horario de atención</h5>
+        <p class="opacity-75 mb-1">Lunes a Viernes: 9:00 a.m. – 6:00 p.m.</p>
+        <p class="opacity-75 mb-1">Sábados: 10:00 a.m. – 2:00 p.m.</p>
+        <p class="opacity-75">Domingos: Cerrado</p>
+      </div>
 
-                                            <!-- Begin Submit button -->
-                                            <div class="col-md-12">
-                                                <div class="quform-submit-inner">
-                                                    <button class="btn btn-white text-primary m-0 px-4" type="submit"><i class="fas fa-paper-plane"></i></button>
-                                                </div>
-                                                <div class="quform-loading-wrap"><span class="quform-loading"></span></div>
-                                            </div>
-                                            <!-- End Submit button -->
+      <!-- Contacto -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Contáctanos</h5>
+        <p class="opacity-75 mb-1"><a href="mailto:contacto@.com" class="text-white opacity-75 hover-opacity">contacto@.com</a></p>
+        <p class="opacity-75 mb-1"><a href="tel:+51999999999" class="text-white opacity-75 hover-opacity">+51 999 999 999</a></p>
+        <p class="opacity-75">Av. Salud Integral 101, Lima, Perú</p>
+      </div>
 
-                                        </div>
+      <!-- Newsletter -->
+      <div class="col-md-4">
+        <h5 class="fw-bold mb-3">Suscríbete</h5>
+        <p class="opacity-75">Recibe consejos, recetas y rutinas directamente en tu correo.</p>
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control rounded-start-pill" placeholder="Ingresa tu correo">
+            <button class="btn btn-primary rounded-end-pill" type="submit">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
 
-                                    </div>
-
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom z-index-9 position-relative">
-                <div class="container position-relative z-index-9">
-                    <div class="row align-items-center py-4">
-                        <div class="col-md-7 col-lg-6 text-center text-md-start order-2 order-md-1">
-                            <p class="d-inline-block text-white mb-0">
-                            &copy; <span class="current-year"></span> All rights reserved by <a href="#!" class="text-secondary text-primary-hover">Chitrakoot Web</a></p>
-                        </div>
-                        <div class="col-md-5 col-lg-6 text-center text-md-end mb-3 mb-md-0 order-1 order-md-2">
-                            <ul class="social-icon-style1 me-xl-12">
-                                <li><a href="#!"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#!"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#!"><i class="fab fa-youtube"></i></a></li>
-                                <li><a href="#!"><i class="fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    <!-- Copyright -->
+    <div class="text-center border-top pt-4 opacity-75">
+      <p class="mb-0">&copy; <span class="current-year"></span> Todos los derechos reservados. Desarrollado por <strong>@</strong></p>
+    </div>
+  </div>
+</footer>
 
         <!-- cursor helper -->
         <div class="cursor-helper">
