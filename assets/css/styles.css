@@ -4911,3 +4911,26 @@ header.sticky-active {
 .footer-nav li a i {
   font-size: 18px;
 }
+/*boton agenta tu llamada*/
+.btn-agenda {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 28px;
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #9aa5d4, #ffffff);
+  color: #000;
+  text-decoration: none;
+  transition: all .3s ease;
+  border: none;
+  box-shadow: 0 0 12px rgba(30, 34, 250, 0.5);
+}
+
+.btn-agenda:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 16px rgba(80, 15, 233, 0.8);
+  background: linear-gradient(90deg, #00c3ff, #003cff);
+  color: #000;
+}
