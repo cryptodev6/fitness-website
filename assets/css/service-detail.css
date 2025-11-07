@@ -1,127 +1,190 @@
-/* ====== SERVICE DETAIL – Visual limpio con acento azul ====== */
-:root{
-  --accent:#4C6FFF;        /* azul principal */
-  --accent-600:#3B57CC;    /* hover */
-  --accent-700:#2F43A6;    /* active */
-  --ink:#1F2937;           /* texto principal */
-  --muted:#5B6470;         /* texto secundario */
-  --divider:#E7EAF0;       /* líneas suaves */
+:root {
+  --accent: #4C6FFF;
+  --accent-dark: #3A55CC;
+  --bg-light: #F8FAFD;
+  --ink: #1E2A38;
+  --muted: #606B78;
+  --border: #E8ECF2;
+  --white: #FFFFFF;
 }
 
-/* Ajuste de imagen izquierda */
-#plan-image{
+/* ==== Layout general ==== */
+.section-plan-detail {
+  background-color: var(--bg-light);
+  overflow: hidden;
+}
+.plan-image {
   background-size: cover;
   background-position: center;
+  min-height: 480px;
   transition: transform .6s ease, filter .6s ease;
-  filter: saturate(1) contrast(1);
 }
-#plan-image:hover{ transform: scale(1.01); }
-
-/* Contenedor derecho */
-.why-choose-02{
-  background: #F8FAFD;                  /* gris muy leve (no blanco puro) */
-  border-left: 1px solid var(--divider);
+.plan-image:hover {
+  transform: scale(1.02);
+  filter: brightness(1.05);
 }
 
-/* Título superior del plan */
-#plan-title{
-  display:block;
-  font-weight:800;
-  color:var(--ink);
-  letter-spacing:.5px;
-  text-transform:uppercase;
-  margin-bottom:1.25rem;
-  position:relative;
+/* ==== Contenido del plan ==== */
+.plan-content {
+  background: var(--white);
+  border-left: 1px solid var(--border);
+  padding: 3rem;
+  color: var(--ink);
 }
-#plan-title::after{
-  content:"";
-  display:block;
-  width:56px;height:3px;
-  background:var(--accent);
-  margin-top:10px;
-  border-radius:3px;
+.plan-title {
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.5px;
 }
-
-/* Subtítulos fijos (“Acompañamiento profesional”, etc.) */
-.why-choose h3{
-  color:var(--ink);
-  font-weight:700;
-}
-
-/* Copy principal */
-#plan-description{
-  color:var(--muted);
-  font-size:1.02rem;
-  line-height:1.85;
-}
-#plan-description p{ margin-bottom:1rem; }
-
-/* Resaltado elegante (sin fondos) */
-#plan-description .highlight{
-  color:var(--accent);
-  font-weight:700;
-}
-#plan-description .keyword{
-  color:var(--ink);
-  font-weight:700;
+.plan-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--accent);
+  margin-top: 10px;
 }
 
-/* Lista de beneficios: bullets discretos y labels sin fondo */
-#plan-description ul{
-  margin:.25rem 0 1.25rem 0;
-  padding-left:0;
-  list-style:none;
+/* ==== Descripción dinámica ==== */
+.plan-description {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--muted);
 }
-#plan-description li{
-  position:relative;
-  padding-left:1.4rem;
-  margin:.35rem 0;
-  color:var(--ink);
+.plan-description p {
+  margin-bottom: 1rem;
 }
-#plan-description li::before{
-  content:"";
-  position:absolute; left:.15rem; top:.82rem;
-  width:.45rem; height:.45rem;
-  border-radius:50%;
-  background:var(--accent);
-  box-shadow: 0 0 0 3px rgba(76,111,255,.12); /* halo suave */
-  transform: translateY(-50%);
+.plan-description strong {
+  color: var(--ink);
 }
-#plan-description .label{
-  font-weight:700;
-  color:var(--ink);
-  margin-right:.25rem;
+.plan-description .highlight {
+  color: var(--accent);
+  font-weight: 700;
 }
-
-/* Botón primario en azul */
-.btn-style1.primary{
-  background:var(--accent);
-  color:#fff;
-  border:none;
-  border-radius:999px;
-  padding:.95rem 1.4rem;
-  font-weight:800;
-  letter-spacing:.2px;
-  box-shadow: 0 8px 20px rgba(76,111,255,.25);
-  transition: all .25s ease;
+.plan-description ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
 }
-.btn-style1.primary:hover{
-  background:var(--accent-600);
-  transform: translateY(-1px);
-  box-shadow: 0 10px 24px rgba(76,111,255,.35);
+.plan-description li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.6rem;
+  color: var(--ink);
 }
-.btn-style1.primary:active{
-  background:var(--accent-700);
-  transform: translateY(0);
+.plan-description li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--accent);
+  font-weight: bold;
+}
+.plan-description .label {
+  color: var(--accent-dark);
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-/* Iconos del bloque fijo */
-.icon-wrap.-img img{
-  filter: grayscale(0) brightness(.95);
-  opacity:.9;
+/* ==== Sección de beneficios fijos ==== */
+.features-section {
+  border-top: 1px solid var(--border);
+  padding-top: 2rem;
+}
+.section-subtitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 1.25rem;
+}
+.feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+.feature .icon-wrap {
+  background: rgba(76, 111, 255, 0.1);
+  color: var(--accent);
+  font-size: 1.3rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.feature h4 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.3rem;
+}
+.feature p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
-/* Separación general en desktop */
-@media (min-width:992px){
-  .why-choose-02{ padding-top:3rem; padding-bottom:3rem; }
+/* ==== CTA ==== */
+.plan-cta {
+  margin-top: 2.5rem;
+}
+.btn-cta {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  padding: 1rem 2.2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 10px 25px rgba(76, 111, 255, 0.25);
+}
+.btn-cta:hover {
+  background: var(--accent-dark);
+  box-shadow: 0 10px 30px rgba(76, 111, 255, 0.35);
+  transform: translateY(-2px);
+}
+.cta-note {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 991px) {
+  .plan-content {
+    padding: 2rem 1.5rem;
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+  .plan-title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .plan-description {
+    text-align: justify;
+  }
+  .features-section {
+    padding-top: 1.5rem;
+  }
+  .feature {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .feature .icon-wrap {
+    margin-bottom: 0.5rem;
+  }
+  .plan-cta {
+    text-align: center;
+  }
+  .btn-cta {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+#plan-cta {
+  color: white !important;
 }

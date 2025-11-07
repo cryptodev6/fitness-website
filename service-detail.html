@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <!-- title -->
-  <title>Detalle del Plan | Yoga for Health</title>
+  <title>Detalle del Plan</title>
 
   <!-- favicon (opcional) -->
   <link rel="shortcut icon" href="">
@@ -93,40 +93,67 @@
     </header>
 
     <!-- CONTENIDO DINÁMICO (plantilla del bloque superior de history.html) -->
-    <section class="p-0 bg-light">
+    <section class="section-plan-detail">
       <div class="container-fluid px-0">
-        <div class="row g-0">
-          <div class="col-lg-6">
-            <!-- La imagen del plan se inyecta por JS -->
-            <div id="plan-image" class="bg-img h-100 cover-background" data-overlay-dark="0" data-background="https://yoga.websitelayout.net/img/content/why-choose01.jpg"></div>
-          </div>
-          <div class="col-lg-6">
-            <div class="p-sm-1-9 p-xl-6 why-choose-02">
-              <!-- Título dinámico del plan -->
-              <span id="plan-title" class="sec-title3 display-29 display-lg-28 text-gray-200 text-shadow">PLAN</span>
+        <div class="row g-0 align-items-stretch">
 
-              <!-- Bloques fijos (como history.html) -->
-              <div class="d-flex why-choose xl-align-items-center mb-2-9">
-                <div class="icon-box-icon">
-                  <div class="icon-wrap -img">
-                    <img src="https://yoga.websitelayout.net/img/icon/icon-1.png" alt="...">
+          <!-- Imagen -->
+          <div class="col-lg-6">
+            <div id="plan-image" class="plan-image bg-img h-100 cover-background" data-overlay-dark="0"></div>
+          </div>
+
+          <!-- Contenido -->
+          <div class="col-lg-6 d-flex align-items-center">
+            <div class="plan-content p-sm-2 p-xl-5">
+
+              <!-- Título dinámico -->
+              <h1 id="plan-title" class="plan-title">Título del Plan</h1>
+
+              <!-- Descripción dinámica -->
+              <div id="plan-description" class="plan-description"></div>
+
+              <!-- Bloques fijos -->
+              <div class="features-section mt-5">
+                <h3 class="section-subtitle">¿Por qué elegir este plan?</h3>
+
+                <div class="feature">
+                  <div class="icon-wrap"><i class="fa-solid fa-user-check"></i></div>
+                  <div>
+                    <h4>Acompañamiento Profesional</h4>
+                    <p>Coaches certificados te guían paso a paso para que avances con claridad y resultados.</p>
                   </div>
                 </div>
-                <div>
-                  <h3 class="mt-2 h4">Acompañamiento profesional</h3>
-                  <p class="mb-0 w-sm-80">Nuestros entrenadores y nutricionistas certificados te guían paso a paso para alcanzar tus metas.</p>
+
+                <div class="feature">
+                  <div class="icon-wrap"><i class="fa-solid fa-heart-pulse"></i></div>
+                  <div>
+                    <h4>Enfoque Integral</h4>
+                    <p>Mejoras físicas, nutricionales y emocionales en un mismo proceso transformador.</p>
+                  </div>
+                </div>
+
+                <div class="feature">
+                  <div class="icon-wrap"><i class="fa-solid fa-users"></i></div>
+                  <div>
+                    <h4>Soporte y Comunidad</h4>
+                    <p>Acceso a grupo privado, retos semanales y acompañamiento real en cada fase.</p>
+                  </div>
                 </div>
               </div>
 
-              <!-- Descripción dinámica del plan -->
-              <div id="plan-description" class="mb-4"></div>
+              <!-- CTA -->
+              <div class="plan-cta text-center mt-5">
+                <a id="plan-cta" href="#" class="btn-cta">Comienza tu transformación</a>
+                <p class="cta-note mt-2">*Serás redirigido a la página de pago correspondiente.</p>
+              </div>
 
-              <a href="history.html" class="btn-style1 primary medium text-white">Haz tu diagnóstico gratuito</a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+
 
     <!-- FOOTER (idéntico a history.html) -->
     <footer class="position-relative">

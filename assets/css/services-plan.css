@@ -1,0 +1,182 @@
+/* ===========================================================
+   DISEÑO PARA P_fitnes.html — DIANA LEAL FITNESS (Versión elegante)
+   =========================================================== */
+
+/* --- Fondo general --- */
+.section-plans {
+  background: #f9fafc !important;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+  color: #1f2937;
+}
+
+/* --- Encabezado superior --- */
+.section-plans h2.plans-title {
+  font-weight: 800;
+  font-size: 2.4rem;
+  text-align: center;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+.section-plans h2 span {
+  color: #5b6dff;
+}
+
+.section-plans p.plans-subtitle {
+  color: #6b7280;
+  font-size: 1.05rem;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+  line-height: 1.6;
+}
+
+/* --- Subtítulos --- */
+.section-title {
+  color: #1e293b;
+  font-weight: 700;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.section-subtitle {
+  color: #5b6dff;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+/* --- Caja de título “Planes Fitness” --- */
+.fitness-card {
+  background: #ffffff !important;
+  border-radius: 14px;
+  border: 2px solid rgba(91, 109, 255, 0.2);
+  padding: 1.2rem 0;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(91, 109, 255, 0.08);
+  transition: all 0.3s ease;
+}
+.fitness-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(91, 109, 255, 0.12);
+}
+.fitness-card h4 {
+  color: #5b6dff !important;
+  font-weight: 700;
+  font-size: 1.4rem;
+  margin: 0;
+}
+
+/* --- Tarjetas de planes --- */
+.plan-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.plan-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(91, 109, 255, 0.15);
+}
+
+/* Imagen */
+.plan-card .image-box img {
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  height: 260px;
+  width: 100%;
+  transition: transform 0.4s ease;
+}
+.plan-card:hover .image-box img {
+  transform: scale(1.04);
+}
+
+/* --- Contenido de tarjeta --- */
+.plan-title a {
+  color: #1e293b;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.3rem;
+  display: inline-block;
+  margin-top: 1.2rem;
+}
+.plan-title a:hover {
+  color: #5b6dff;
+}
+
+.plan-desc {
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin: 1rem 1.2rem 1.8rem;
+}
+.plan-desc strong {
+  color: #1e293b;
+}
+.plan-desc .highlight {
+  color: #5b6dff;
+  font-weight: 600;
+}
+
+/* --- Botón principal --- */
+.btn-cta {
+  display: inline-block;
+  background: linear-gradient(135deg, #5b6dff 0%, #6e8bff 100%);
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.9rem 2.2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 10px 24px rgba(91, 109, 255, 0.25);
+  transition: all 0.25s ease;
+}
+.btn-cta:hover {
+  background: linear-gradient(135deg, #4658ff 0%, #2b3cff 100%);
+  box-shadow: 0 12px 36px rgba(91, 109, 255, 0.4);
+  transform: translateY(-3px);
+}
+
+/* --- Botón volver --- */
+.btn-outline-success {
+  background: transparent;
+  border: 2px solid #5b6dff !important;
+  color: #5b6dff !important;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.25s ease;
+}
+.btn-outline-success:hover {
+  background: #5b6dff !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 20px rgba(91, 109, 255, 0.3);
+}
+
+/* --- Footer --- */
+footer.bg-dark {
+  background: #1c1c27 !important;
+}
+footer a:hover {
+  color: #5b6dff !important;
+}
+
+/* --- Responsive --- */
+@media (max-width: 992px) {
+  .section-plans h2.plans-title {
+    font-size: 2rem;
+  }
+  .plan-card {
+    margin-bottom: 2rem;
+  }
+  .plan-card .image-box img {
+    height: 220px;
+  }
+  .plan-title a {
+    font-size: 1.2rem;
+  }
+  .btn-cta {
+    font-size: 0.95rem;
+    padding: 0.8rem 1.8rem;
+  }
+}

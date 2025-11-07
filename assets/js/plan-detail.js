@@ -1,96 +1,180 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);
-  const planKey = params.get("plan");
+  const key = params.get("plan");
 
   const plans = {
-    basico: {
-      title: "Plan Básico",
-      image: "https://yoga.websitelayout.net/img/service/services-01.jpg",
+    "peso-ideal": {
+      title: "Plan Peso Ideal 360",
+      image: "https://images.pexels.com/photos/1552249/pexels-photo-1552249.jpeg",
+      cta: "#pago-peso-ideal",
       description: `
-        <p><strong><span class="highlight">Ideal para principiantes</span></strong> que quieren <span class="keyword">empezar con energía</span> y <span class="keyword">ver resultados reales</span> sin complicaciones.</p>
-        <p>Incluye un <span class="highlight">plan nutricional balanceado</span> y una <span class="highlight">rutina funcional</span> que te ayuda a formar el hábito y sentirte mejor desde la primera semana.</p>
+        <p><strong class="highlight">Objetivo:</strong> Recuperar tu peso saludable y sentirte liviana otra vez.</p>
+        <p>Un plan completo para <span class="highlight">bajar grasa corporal</span> sin dietas extremas, sin efecto rebote
+        y con acompañamiento cercano. Ideal si estás comenzando o quieres retomar tu proceso con estructura.</p>
+
+        <p><strong class="label">Incluye:</strong></p>
         <ul>
-          <li><span class="label">Duración:</span> 4 semanas</li>
-          <li><span class="label">Entrenamientos:</span> en casa o gym (30 min diarios)</li>
-          <li><span class="label">Guía nutricional:</span> por porciones simples</li>
-          <li><span class="label">Soporte básico:</span> email con feedback semanal</li>
-        </ul>`
+          <li>Alimentación guiada según tus objetivos y contexto real.</li>
+          <li>Entrenamientos quema grasa adaptados a tu nivel (casa o gym).</li>
+          <li>Educación en hábitos para sostener resultados.</li>
+          <li>Uso estratégico de suplemento recomendado.</li>
+        </ul>
+
+        <p><strong class="label">Modalidades:</strong></p>
+        <ul>
+          <li><strong>BASIC – 30 días (USD 199):</strong> Plan personalizado de alimentación y entrenamiento, acceso a comunidad y 1 suplemento. 
+              Ideal para iniciar con estructura clara.</li>
+          <li><strong>PLUS – 60 días (USD 299):</strong> Opción más elegida. Coaching semanal 1:1, recetarios fit, ajustes según progreso,
+              acompañamiento cercano y 2 suplementos para optimizar resultados.</li>
+          <li><strong>VIP – 90 días (USD 499):</strong> Transformación total. Seguimiento diario, asesoría emocional, respiración y visualización guiada,
+              revisión semanal, optimización de hábitos y 4 suplementos estratégicos.</li>
+        </ul>
+      `
     },
 
-    intermedio: {
-      title: "Plan Intermedio",
-      image: "https://yoga.websitelayout.net/img/service/services-02.jpg",
+    "definicion": {
+      title: "Plan Definición Muscular",
+      image: "https://images.pexels.com/photos/2261477/pexels-photo-2261477.jpeg",
+      cta: "#pago-definicion",
       description: `
-        <p><strong><span class="highlight">Ideal si ya entrenas</span></strong> o has seguido planes antes. Combinamos <span class="keyword">entrenamiento estructurado</span> y <span class="keyword">alimentación estratégica</span> para optimizar tu rendimiento.</p>
-        <p>Perfecto para quienes buscan <span class="keyword">definir</span>, <span class="keyword">ganar masa</span> o <span class="keyword">mejorar energía</span> sin estancarse.</p>
+        <p><strong class="highlight">Objetivo:</strong> Marcar tus músculos, reducir tu % de grasa y verte más fit.</p>
+        <p>Diseñado para quien quiere <span class="highlight">esculpir su cuerpo</span>, mejorar composición corporal
+        y mantener energía alta sin perder músculo.</p>
+
+        <p><strong class="label">Incluye:</strong></p>
         <ul>
-          <li><span class="label">Duración:</span> 6 semanas</li>
-          <li><span class="label">Rutinas progresivas:</span> según objetivo (masa, definición o salud)</li>
-          <li><span class="label">Nutrición:</span> antiinflamatoria ajustada a tus requerimientos</li>
-          <li><span class="label">Soporte:</span> revisión mensual de progreso y ajustes</li>
-        </ul>`
+          <li>Plan alto en proteínas adaptado a tus requerimientos.</li>
+          <li>Entrenamientos estratégicos de fuerza y cardio inteligente.</li>
+          <li>Guía de suplementación para definición y recuperación.</li>
+        </ul>
+
+        <p><strong class="label">Modalidades:</strong></p>
+        <ul>
+          <li><strong>BASIC – 30 días (USD 199):</strong> Plan de alimentación para definición + rutina de entrenamiento detallada.</li>
+          <li><strong>PLUS – 60 días (USD 299):</strong> Coaching 1:1 semanal, manejo de antojos, recetarios fit, ajustes continuos y 2 suplementos incluidos.</li>
+          <li><strong>VIP – 90 días (USD 499):</strong> Seguimiento diario, trabajo de mindset, visualizaciones, ajustes semanales avanzados
+              y 4 suplementos para máxima definición y rendimiento.</li>
+        </ul>
+      `
     },
 
-    premium: {
-      title: "Plan Premium",
-      image: "https://yoga.websitelayout.net/img/service/services-03.jpg",
+    "strong": {
+      title: "Plan Get Strong (Fuerza Total)",
+      image: "https://images.pexels.com/photos/2294403/pexels-photo-2294403.jpeg",
+      cta: "#pago-strong",
       description: `
-        <p><strong><span class="highlight">Atención 100% personalizada</span></strong> para quienes buscan <span class="keyword">resultados visibles y sostenibles</span>.</p>
-        <p>Incluye <span class="keyword">coaching emocional</span>, <span class="keyword">nutrición avanzada</span> y <span class="keyword">entrenamiento con ajustes semanales</span> para maximizar tu potencial.</p>
+        <p><strong class="highlight">Objetivo:</strong> Ganar masa muscular limpia, fuerza y un físico poderoso.</p>
+        <p>Ideal para quien desea <span class="highlight">aumentar músculo sin acumular grasa</span>, mejorar rendimiento y verse atlético,
+        con una estructura clara y acompañamiento profesional.</p>
+
+        <p><strong class="label">Incluye:</strong></p>
         <ul>
-          <li><span class="label">Duración:</span> 8–12 semanas</li>
-          <li><span class="label">Seguimiento VIP:</span> semanal por WhatsApp</li>
-          <li><span class="label">Métricas:</span> energía, rendimiento y estrés</li>
-          <li><span class="label">Acceso:</span> comunidad Premium y soporte prioritario</li>
-        </ul>`
+          <li>Plan hipercalórico limpio, alineado a tus objetivos y metabolismo.</li>
+          <li>Rutinas progresivas de fuerza y volumen (casa o gym).</li>
+          <li>Guía avanzada de proteína, creatina y suplementación específica.</li>
+        </ul>
+
+        <p><strong class="label">Modalidades:</strong></p>
+        <ul>
+          <li><strong>BASIC – 30 días (USD 199):</strong> Plan hipercalórico + rutina de fuerza + 1 suplemento recomendado.</li>
+          <li><strong>PLUS – 60 días (USD 299):</strong> Coaching 1:1, ajustes de cargas, recetarios, seguimiento de rendimiento
+              y 2 suplementos incluidos.</li>
+          <li><strong>VIP – 90 días (USD 499):</strong> Seguimiento diario, estrategias mentales, visualizaciones, biohacks para recuperación,
+              revisión de composición muscular y 4 suplementos clave.</li>
+        </ul>
+      `
     },
 
-    reto: {
-      title: "Reto 21 Días",
-      image: "https://yoga.websitelayout.net/img/service/services-04.jpg",
+    "detox": {
+      title: "Plan Detox Reset",
+      image: "https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=800&q=80",
+      cta: "#pago-detox",
       description: `
-        <p><strong><span class="highlight">Activa tu cuerpo</span></strong> y limpia tus hábitos en <span class="keyword">21 días</span>.</p>
-        <p>Desafío guiado con <span class="keyword">alimentación antiinflamatoria</span>, <span class="keyword">rutinas rápidas</span> y <span class="keyword">mindset diario</span>.</p>
+        <p><strong class="highlight">Objetivo:</strong> Eliminar toxinas, desinflamar y recuperar ligereza.</p>
+        <p>Un reinicio físico y mental para quienes sienten <span class="highlight">hinchazón, pesadez o fatiga</span>.
+        Trabaja sobre digestión, energía y claridad mental.</p>
+
+        <p><strong class="label">Incluye:</strong></p>
         <ul>
-          <li><span class="label">Duración:</span> 21 días</li>
-          <li><span class="label">Alimentación:</span> deliciosa y sencilla</li>
-          <li><span class="label">Entrenamientos:</span> efectivos (&lt; 40 min)</li>
-          <li><span class="label">Comunidad:</span> soporte diario en grupo</li>
-        </ul>`
+          <li>Plan alimenticio depurativo y funcional.</li>
+          <li>Licuados y preparaciones detox estratégicas.</li>
+          <li>Guía antiinflamatoria y educación nutricional.</li>
+          <li>Suplemento detox recomendado.</li>
+        </ul>
+
+        <p><strong class="label">Modalidades:</strong></p>
+        <ul>
+          <li><strong>BASIC – 30 días (USD 199):</strong> Menú detox estructurado, licuados funcionales y 1 suplemento.</li>
+          <li><strong>PLUS – 60 días (USD 299):</strong> Coaching 1:1, guía linfática, recetarios, ajustes según respuesta del cuerpo
+              y 2 suplementos.</li>
+          <li><strong>VIP – 90 días (USD 499):</strong> Seguimiento diario, apoyo emocional, visualizaciones detox, plan reset profundo
+              y acompañamiento integral.</li>
+        </ul>
+      `
     },
 
-    nutricion: {
-      title: "Asesoría Nutricional",
-      image: "https://yoga.websitelayout.net/img/service/services-05.jpg",
+    "antiinflamatorio": {
+      title: "Plan Antiinflamatorio Vital",
+      image: "https://images.unsplash.com/photo-1558611848-73f7eb4001a1?auto=format&fit=crop&w=800&q=80",
+      cta: "#pago-antiinflamatorio",
       description: `
-        <p><strong><span class="highlight">Consulta individual</span></strong> con especialista en nutrición funcional. Creamos un <span class="keyword">plan totalmente personalizado</span> a tu vida real.</p>
-        <p>Estrategias claras para <span class="keyword">comer sin culpa</span> y mantener energía estable durante el día.</p>
+        <p><strong class="highlight">Objetivo:</strong> Reducir inflamación crónica y restaurar bienestar interno.</p>
+        <p>Ideal para quienes sufren <span class="highlight">hinchazón, molestias digestivas, dolor articular o fatiga constante</span>.
+        Enfoque funcional para sanar desde la raíz.</p>
+
+        <p><strong class="label">Incluye:</strong></p>
         <ul>
-          <li><span class="label">Duración:</span> sesión única o paquete mensual</li>
-          <li><span class="label">Diagnóstico:</span> composición corporal y hábitos</li>
-          <li><span class="label">Plan:</span> adaptado a horarios y preferencias</li>
-        </ul>`
+          <li>Menú antiinflamatorio completo y flexible.</li>
+          <li>Guía digestiva y de combinación de alimentos.</li>
+          <li>Educación en hábitos antiinflamatorios (estrés, sueño, hidratación).</li>
+          <li>Suplemento funcional recomendado.</li>
+        </ul>
+
+        <p><strong class="label">Modalidades:</strong></p>
+        <ul>
+          <li><strong>BASIC – 30 días (USD 199):</strong> Menú antiinflamatorio, guía de compras, plan digestivo y 1 suplemento.</li>
+          <li><strong>PLUS – 60 días (USD 299):</strong> Coaching 1:1, enfoque en salud intestinal y articular, recetarios específicos
+              y 2 suplementos.</li>
+          <li><strong>VIP – 90 días (USD 499):</strong> Seguimiento diario, asesoría emocional/respiratoria, visualizaciones regenerativas,
+              biohacks y ajustes personalizados continuos.</li>
+        </ul>
+      `
     },
 
-    coaching: {
-      title: "Coaching Emocional",
-      image: "https://yoga.websitelayout.net/img/service/services-06.jpg",
+    "stressfree": {
+      title: "Plan Stress Free (Equilibrio Total)",
+      image: "https://images.unsplash.com/photo-1505678261036-a3fcc5e884ee?auto=format&fit=crop&w=800&q=80",
+      cta: "#pago-stressfree",
       description: `
-        <p><strong><span class="highlight">Transforma tu relación con la comida</span></strong> y el ejercicio. Aprende a <span class="keyword">gestionar la ansiedad</span> y superar bloqueos.</p>
-        <p>Acompañamiento 1:1 con herramientas de <span class="keyword">autoconocimiento</span> y <span class="keyword">motivación real</span>.</p>
+        <p><strong class="highlight">Objetivo:</strong> Reducir el estrés, mejorar el sueño y recuperar el balance.</p>
+        <p>Perfecto para quienes viven con <span class="highlight">ansiedad, insomnio o agotamiento emocional</span>.
+        Integra alimentación, hábitos y herramientas emocionales.</p>
+
+        <p><strong class="label">Incluye:</strong></p>
         <ul>
-          <li><span class="label">Sesiones:</span> 1:1 con coach certificada</li>
-          <li><span class="label">Herramientas:</span> emociones, hábitos y protocolos</li>
-          <li><span class="label">Guías:</span> journaling y mindset positivo</li>
-        </ul>`
+          <li>Menú relajante y regulador.</li>
+          <li>Guía mindfulness y respiración consciente.</li>
+          <li>Estrategias para regular cortisol y sistema nervioso.</li>
+          <li>Suplemento anti-estrés recomendado.</li>
+        </ul>
+
+        <p><strong class="label">Modalidades:</strong></p>
+        <ul>
+          <li><strong>BASIC – 30 días (USD 199):</strong> Plan calmante, ejercicios respiratorios, guía de sueño y 1 suplemento.</li>
+          <li><strong>PLUS – 60 días (USD 299):</strong> Coaching emocional semanal, guía de cortisol, recetarios anti-estrés
+              y 2 suplementos.</li>
+          <li><strong>VIP – 90 días (USD 499):</strong> Seguimiento diario, técnicas de respiración y journaling, visualizaciones,
+              revisión de hábitos y soporte integral.</li>
+        </ul>
+      `
     }
   };
 
 
-  const plan = plans[planKey] || plans.basico;
+  const plan = plans[key] || plans["peso-ideal"];
 
   document.getElementById("plan-title").textContent = plan.title;
   document.getElementById("plan-description").innerHTML = plan.description;
-  document.getElementById("plan-image").setAttribute("data-background", plan.image);
   document.getElementById("plan-image").style.backgroundImage = `url(${plan.image})`;
+  document.getElementById("plan-cta").setAttribute("href", plan.cta);
 });
