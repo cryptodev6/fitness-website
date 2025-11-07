@@ -4869,3 +4869,9 @@ header.sticky-active {
 .highlight-green {
   color: #32CD32;
 }
+.buy-theme {
+	display: none !important;
+}
+.all-demo {
+	display: none !important;
+}
