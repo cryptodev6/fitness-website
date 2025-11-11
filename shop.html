@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <!-- metas -->
@@ -31,9 +30,6 @@
 
     <!-- theme core css -->
     <link href="assets/css/styles.css" rel="stylesheet">
-
-    <!-- theme core css -->
-    <link href="assets/css/services.css" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -96,7 +92,7 @@
                     <li class="nav-item"><a class="nav-link" href="services.html">Planes</a></li>
                     <li class="nav-item"><a class="nav-link" href="event-details.html">Reto 21 Días</a></li>
                     <li><a href="shop.html">Shop</a></li>
-                     <li><a href="conocenos.html">Conócenos</a></li>
+                    <li><a href="conocenos.html">Conócenos</a></li>
                     <li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog</a></li>
                 </ul>
 
@@ -110,62 +106,86 @@
 </header>
 
 
+   <main>
+    <section class="products" id="listProducts">
+        <h2>Productos Fitness</h2>
+        <div class="products-grid container">
 
-        <!-- OUR SERVICES-->
-        <section class="section-plans">
-          <div class="container text-center">
-            
-            <!-- Encabezado -->
-            <h2 class="plans-title">
-              Elige tu <span>Plan de Transformación</span>
-            </h2>
-            <p class="plans-subtitle">
-              Cada plan está diseñado con un enfoque distinto, pero con un mismo propósito:
-              <strong>transformar tu cuerpo y tu energía</strong>.
-            </p>
-
-            <!-- Subtítulo -->
-            <h3 class="section-subtitle">Nuestros Programas</h3>
-            <p class="section-intro">Selecciona el camino que mejor se adapta a tu estilo de vida</p>
-
-            <!-- Tarjetas de planes -->
-            <div class="row justify-content-center g-4 mt-4">
-
-              <!-- Plan Fitness -->
-              <div class="col-md-5">
-                <div class="plan-card">
-                  <div class="plan-img" style="background-image:url('https://images.unsplash.com/photo-1554284126-aa88f22d8b74');"></div>
-                  <div class="plan-body">
-                    <h4 class="plan-title"><span>Planes de Fitness</span></h4>
-                    <p class="plan-desc">
-                      Entrenamientos enfocados en <span class="highlight">fuerza, definición</span> 
-                      y composición corporal, diseñados para que alcances tu mejor versión.
-                    </p>
-                    <a href="P_fitnes.html" class="btn-cta">Ver detalles</a>
-                  </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba" alt="Proteína Whey">
+                <div class="product-info">
+                    <h4>Proteína Whey Premium</h4>
+                    <p class="product-text">Alta calidad, ideal para aumentar masa muscular.</p>
+                    <i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i>
+                    <div class="price"><span>$120.000</span><p id="currentPrice">$95.000</p></div>
+                    <button class="btn-add" data-id="1">Agregar</button>
                 </div>
-              </div>
-
-              <!-- Plan Bienestar -->
-              <div class="col-md-5">
-                <div class="plan-card">
-                  <div class="plan-img" style="background-image:url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1');"></div>
-                  <div class="plan-body">
-                    <h4 class="plan-title"><span>Planes de Bienestar</span></h4>
-                    <p class="plan-desc">
-                      Programas diseñados para mejorar tus <span class="highlight">hábitos, energía mental</span> 
-                      y equilibrio emocional a través de movimiento consciente y nutrición funcional.
-                    </p>
-                    <a href="P_Bienestar.html" class="btn-cta">Ver detalles</a>
-                  </div>
-                </div>
-              </div>
-
             </div>
-          </div>
-        </section>
 
- <footer class="footer-two bg-dark position-relative overflow-hidden pt-6 pt-md-8"> 
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="Creatina">
+                <div class="product-info">
+                    <h4>Creatina Monohidratada</h4>
+                    <p class="product-text">Mejora fuerza y rendimiento.</p>
+                    <i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i>
+                    <div class="price"><span>$90.000</span><p id="currentPrice">$75.000</p></div>
+                    <button class="btn-add" data-id="2">Agregar</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="Cinturón para gym">
+                <div class="product-info">
+                    <h4>Cinturón de Entrenamiento</h4>
+                    <p class="product-text">Soporte lumbar profesional para levantamiento de pesas.</p>
+                    <i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i>
+                    <div class="price"><span>$160.000</span><p id="currentPrice">$130.000</p></div>
+                    <button class="btn-add" data-id="3">Agregar</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e" alt="Botella deportiva">
+                <div class="product-info">
+                    <h4>Botella Deportiva</h4>
+                    <p class="product-text">Termo 1 litro, libre de BPA.</p>
+                    <i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i>
+                    <div class="price"><span>$65.000</span><p id="currentPrice">$49.900</p></div>
+                    <button class="btn-add" data-id="4">Agregar</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="Guantes gym">
+                <div class="product-info">
+                    <h4>Guantes Pro Gym</h4>
+                    <p class="product-text">Mayor agarre y protección para tus entrenamientos.</p>
+                    <i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i>
+                    <div class="price"><span>$55.000</span><p id="currentPrice">$39.900</p></div>
+                    <button class="btn-add" data-id="5">Agregar</button>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="Mancuernas">
+                <div class="product-info">
+                    <h4>Set de Mancuernas</h4>
+                    <p class="product-text">Par ajustable, ideal para casa o gym.</p>
+                    <i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i><i class="fa-solid fa-star icon-star"></i>
+                    <div class="price"><span>$350.000</span><p id="currentPrice">$299.900</p></div>
+                    <button class="btn-add" data-id="6">Agregar</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+
+
+
+        <!-- FOOTER
+        ================================================== -->
+        <footer class="footer-two bg-dark position-relative overflow-hidden pt-6 pt-md-8"> 
             <div class="container">
                 <!-- LOGO + NAV -->
                 <div class="row border-bottom border-color-light-white mb-7 pb-2-9 align-items-center">
@@ -264,7 +284,7 @@
             <div class="border-top border-color-light-white py-4">
                 <div class="text-center fw-bold">
                     <p class="mb-0 text-white">
-                        &copy; <span class="current-year"></span> Todos los derechos reservados. Marca desarrollada por <a href="#!" class="text-secondary text-primary-hover">@</a>
+                        &copy; <span class="current-year"></span> Todos los derechos reservados. Marca desarrollada por <a href="#!" class="text-secondary text-primary-hover">TuNombre o Agencia</a>
                     </p>
                 </div>
             </div>
@@ -317,5 +337,5 @@
 </body>
 
 
-<!-- Mirrored from yoga.websitelayout.net/services.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Aug 2025 21:07:51 GMT -->
+<!-- Mirrored from yoga.websitelayout.net/event-details.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Aug 2025 21:07:51 GMT -->
 </html>
