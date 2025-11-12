@@ -5605,3 +5605,135 @@ body {
   margin-bottom: 10px;
   color: #003cff;
 }
+/*botones pago*/
+/* ===== SECCIÓN GENERAL ===== */
+.payment-section {
+  background: #ffffff;
+  color: #222;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.payment-section h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+/* ===== CONTENEDOR DE BOTONES ===== */
+.payment-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* ===== BOTONES CLÁSICOS ===== */
+.payment-btn {
+  display: inline-block;
+  border-radius: 50px;
+  padding: 12px 36px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  font-size: 16px;
+  border: 2px solid;
+}
+
+/* ===== COLORES DE CADA PLAN ===== */
+.payment-btn.basico {
+  color: #00b894;
+  border-color: #00b894;
+}
+
+.payment-btn.plus {
+  color: #0984e3;
+  border-color: #0984e3;
+}
+
+.payment-btn.vip {
+  color: #6c5ce7;
+  border-color: #6c5ce7;
+}
+
+/* ===== EFECTO HOVER ===== */
+.payment-btn:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.payment-btn.basico:hover {
+  background-color: #00b894;
+}
+
+.payment-btn.plus:hover {
+  background-color: #0984e3;
+}
+
+.payment-btn.vip:hover {
+  background-color: #6c5ce7;
+}
+/*paginas de pago*/
+.plan-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px; /* opcional: controla el ancho total */
+}
+
+.plan-list li {
+  text-align: center; /* centra texto y contenido */
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.plan-list strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #000;
+}
+
+/* Botones */
+.payment-buttons {
+  margin-top: 15px;
+}
+
+.payment-btn {
+  display: inline-block;
+  border-radius: 50px;
+  padding: 10px 28px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid;
+  transition: all 0.25s ease;
+}
+
+/* Colores */
+.payment-btn.basico {
+  color: #00b894;
+  border-color: #00b894;
+}
+.payment-btn.plus {
+  color: #0984e3;
+  border-color: #0984e3;
+}
+.payment-btn.vip {
+  color: #6c5ce7;
+  border-color: #6c5ce7;
+}
+
+/* Hover */
+.payment-btn:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+.payment-btn.basico:hover {
+  background: #00b894;
+}
+.payment-btn.plus:hover {
+  background: #0984e3;
+}
+.payment-btn.vip:hover {
+  background: #6c5ce7;
+}
