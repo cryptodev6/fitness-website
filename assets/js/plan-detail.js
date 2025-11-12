@@ -19,15 +19,47 @@ document.addEventListener("DOMContentLoaded", () => {
           <li>Educación en hábitos para sostener resultados.</li>
           <li>Uso estratégico de suplemento recomendado.</li>
         </ul>
+      <p><strong class="label">Modalidades:</strong></p>
 
-        <p><strong class="label">Modalidades:</strong></p>
-        <ul>
-          <li><strong>BASIC – 30 días (USD 199):</strong> Plan personalizado de alimentación y entrenamiento, acceso a comunidad y 1 suplemento. 
-              Ideal para iniciar con estructura clara.</li>
-          <li><strong>PLUS – 60 días (USD 299):</strong> Opción más elegida. Coaching semanal 1:1, recetarios fit, ajustes según progreso,
-              acompañamiento cercano y 2 suplementos para optimizar resultados.</li>
-          <li><strong>VIP – 90 días (USD 499):</strong> Transformación total. Seguimiento diario, asesoría emocional, respiración y visualización guiada,
-              revisión semanal, optimización de hábitos y 4 suplementos estratégicos.</li>
+                  <ul class="plan-list">
+                    <li>
+                      <strong>BASIC – 30 días (USD 199):</strong> Plan personalizado de alimentación y entrenamiento, acceso a comunidad y 1 suplemento. 
+                      Ideal para iniciar con estructura clara.
+                      <div class="payment-buttons">
+                        <a href="https://checkout.bold.co/payment/LNK_7W29G58WBT" 
+                          target="_blank" 
+                          class="payment-btn basico">
+                          💪 Plan Básico
+                        </a>
+                      </div>
+                    </li>
+
+                    <li>
+                      <strong>PLUS – 60 días (USD 299):</strong> Opción más elegida. Coaching semanal 1:1, recetarios fit, ajustes según progreso,
+                      acompañamiento cercano y 2 suplementos para optimizar resultados.
+                      <div class="payment-buttons">
+                        <a href="https://checkout.bold.co/payment/LNK_L6HYYBUQLT" 
+                          target="_blank" 
+                          class="payment-btn plus">
+                          ⚡ Plan Plus
+                        </a>
+                      </div>
+                    </li>
+
+                    <li>
+                      <strong>VIP – 90 días (USD 499):</strong> Transformación total. Seguimiento diario, asesoría emocional, respiración y visualización guiada,
+                      revisión semanal, optimización de hábitos y 4 suplementos estratégicos.
+                      <div class="payment-buttons">
+                        <a href="https://checkout.bold.co/payment/LNK_7W29G58WBT" 
+                          target="_blank" 
+                          class="payment-btn vip">
+                          👑 Plan VIP
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+
+
         </ul>
       `
     },
@@ -50,11 +82,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
         <p><strong class="label">Modalidades:</strong></p>
         <ul>
-          <li><strong>BASIC – 30 días (USD 199):</strong> Plan de alimentación para definición + rutina de entrenamiento detallada.</li>
-          <li><strong>PLUS – 60 días (USD 299):</strong> Coaching 1:1 semanal, manejo de antojos, recetarios fit, ajustes continuos y 2 suplementos incluidos.</li>
-          <li><strong>VIP – 90 días (USD 499):</strong> Seguimiento diario, trabajo de mindset, visualizaciones, ajustes semanales avanzados
-              y 4 suplementos para máxima definición y rendimiento.</li>
-        </ul>
+      
+
+              <ul class="plan-list">
+                <li>
+                  <strong>BASIC – 30 días (USD 199):</strong>
+                  Plan de alimentación para definición + rutina de entrenamiento detallada.
+                  <div class="payment-buttons">
+                    <a href="https://checkout.bold.co/payment/LNK_I3KJM8MPR3" 
+                      target="_blank" 
+                      class="payment-btn basico">
+                      💪 Plan Básico
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <strong>PLUS – 60 días (USD 299):</strong>
+                  Coaching 1:1 semanal, manejo de antojos, recetarios fit, ajustes continuos y 2 suplementos incluidos.
+                  <div class="payment-buttons">
+                    <a href="https://checkout.bold.co/payment/LNK_8X5CIG3VDL" 
+                      target="_blank" 
+                      class="payment-btn plus">
+                      ⚡ Plan Plus
+                    </a>
+                  </div>
+                </li>
+
+                <li>
+                  <strong>VIP – 90 días (USD 499):</strong>
+                  Seguimiento diario, trabajo de mindset, visualizaciones, ajustes semanales avanzados
+                  y 4 suplementos para máxima definición y rendimiento.
+                  <div class="payment-buttons">
+                    <a href="https://checkout.bold.co/payment/LNK_L85TTWUV0Y" 
+                      target="_blank" 
+                      class="payment-btn vip">
+                      👑 Plan VIP
+                    </a>
+                  </div>
+                </li>
+              </ul>
+
       `
     },
 
@@ -74,14 +142,48 @@ document.addEventListener("DOMContentLoaded", () => {
           <li>Guía avanzada de proteína, creatina y suplementación específica.</li>
         </ul>
 
-        <p><strong class="label">Modalidades:</strong></p>
-        <ul>
-          <li><strong>BASIC – 30 días (USD 199):</strong> Plan hipercalórico + rutina de fuerza + 1 suplemento recomendado.</li>
-          <li><strong>PLUS – 60 días (USD 299):</strong> Coaching 1:1, ajustes de cargas, recetarios, seguimiento de rendimiento
-              y 2 suplementos incluidos.</li>
-          <li><strong>VIP – 90 días (USD 499):</strong> Seguimiento diario, estrategias mentales, visualizaciones, biohacks para recuperación,
-              revisión de composición muscular y 4 suplementos clave.</li>
-        </ul>
+       <p><strong class="label">Modalidades:</strong></p>
+
+          <ul class="plan-list">
+            <li>
+              <strong>BASIC – 30 días (USD 199):</strong>
+              Plan hipercalórico + rutina de fuerza + 1 suplemento recomendado.
+              <div class="payment-buttons">
+                <a href="https://checkout.bold.co/payment/LNK_FKTFT18227" 
+                  target="_blank" 
+                  class="payment-btn basico">
+                  💪 Plan Básico
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <strong>PLUS – 60 días (USD 299):</strong>
+              Coaching 1:1, ajustes de cargas, recetarios, seguimiento de rendimiento
+              y 2 suplementos incluidos.
+              <div class="payment-buttons">
+                <a href="https://checkout.bold.co/payment/LNK_N6HEGZON4W" 
+                  target="_blank" 
+                  class="payment-btn plus">
+                  ⚡ Plan Plus
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <strong>VIP – 90 días (USD 499):</strong>
+              Seguimiento diario, estrategias mentales, visualizaciones, biohacks para recuperación,
+              revisión de composición muscular y 4 suplementos clave.
+              <div class="payment-buttons">
+                <a href="https://checkout.bold.co/payment/LNK_249SYSCMMI" 
+                  target="_blank" 
+                  class="payment-btn vip">
+                  👑 Plan VIP
+                </a>
+              </div>
+            </li>
+          </ul>
+
       `
     },
 
@@ -102,14 +204,48 @@ document.addEventListener("DOMContentLoaded", () => {
           <li>Suplemento detox recomendado.</li>
         </ul>
 
-        <p><strong class="label">Modalidades:</strong></p>
-        <ul>
-          <li><strong>BASIC – 30 días (USD 199):</strong> Menú detox estructurado, licuados funcionales y 1 suplemento.</li>
-          <li><strong>PLUS – 60 días (USD 299):</strong> Coaching 1:1, guía linfática, recetarios, ajustes según respuesta del cuerpo
-              y 2 suplementos.</li>
-          <li><strong>VIP – 90 días (USD 499):</strong> Seguimiento diario, apoyo emocional, visualizaciones detox, plan reset profundo
-              y acompañamiento integral.</li>
-        </ul>
+       <p><strong class="label">Modalidades:</strong></p>
+
+            <ul class="plan-list">
+              <li>
+                <strong>BASIC – 30 días (USD 199):</strong>
+                Menú detox estructurado, licuados funcionales y 1 suplemento.
+                <div class="payment-buttons">
+                  <a href="https://checkout.bold.co/payment/LNK_1DNW24W7K3" 
+                    target="_blank" 
+                    class="payment-btn basico">
+                    💪 Plan Básico
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <strong>PLUS – 60 días (USD 299):</strong>
+                Coaching 1:1, guía linfática, recetarios, ajustes según respuesta del cuerpo
+                y 2 suplementos.
+                <div class="payment-buttons">
+                  <a href="https://checkout.bold.co/payment/LNK_HV2SFF1Q0R" 
+                    target="_blank" 
+                    class="payment-btn plus">
+                    ⚡ Plan Plus
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <strong>VIP – 90 días (USD 499):</strong>
+                Seguimiento diario, apoyo emocional, visualizaciones detox, plan reset profundo
+                y acompañamiento integral.
+                <div class="payment-buttons">
+                  <a href="https://checkout.bold.co/payment/LNK_N4SN2BK03E" 
+                    target="_blank" 
+                    class="payment-btn vip">
+                    👑 Plan VIP
+                  </a>
+                </div>
+              </li>
+            </ul>
+
       `
     },
 
@@ -129,15 +265,48 @@ document.addEventListener("DOMContentLoaded", () => {
           <li>Educación en hábitos antiinflamatorios (estrés, sueño, hidratación).</li>
           <li>Suplemento funcional recomendado.</li>
         </ul>
+<p><strong class="label">Modalidades:</strong></p>
 
-        <p><strong class="label">Modalidades:</strong></p>
-        <ul>
-          <li><strong>BASIC – 30 días (USD 199):</strong> Menú antiinflamatorio, guía de compras, plan digestivo y 1 suplemento.</li>
-          <li><strong>PLUS – 60 días (USD 299):</strong> Coaching 1:1, enfoque en salud intestinal y articular, recetarios específicos
-              y 2 suplementos.</li>
-          <li><strong>VIP – 90 días (USD 499):</strong> Seguimiento diario, asesoría emocional/respiratoria, visualizaciones regenerativas,
-              biohacks y ajustes personalizados continuos.</li>
+        <ul class="plan-list">
+          <li>
+            <strong>BASIC – 30 días (USD 199):</strong>
+            Menú antiinflamatorio, guía de compras, plan digestivo y 1 suplemento.
+            <div class="payment-buttons">
+              <a href="https://checkout.bold.co/payment/LNK_FNAGWDD97G" 
+                target="_blank" 
+                class="payment-btn basico">
+                💪 Plan Básico
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <strong>PLUS – 60 días (USD 299):</strong>
+            Coaching 1:1, enfoque en salud intestinal y articular, recetarios específicos
+            y 2 suplementos.
+            <div class="payment-buttons">
+              <a href="https://checkout.bold.co/payment/LNK_845954WCDJ" 
+                target="_blank" 
+                class="payment-btn plus">
+                ⚡ Plan Plus
+              </a>
+            </div>
+          </li>
+
+          <li>
+            <strong>VIP – 90 días (USD 499):</strong>
+            Seguimiento diario, asesoría emocional/respiratoria, visualizaciones regenerativas,
+            biohacks y ajustes personalizados continuos.
+            <div class="payment-buttons">
+              <a href="https://checkout.bold.co/payment/LNK_SD35DXN2T4" 
+                target="_blank" 
+                class="payment-btn vip">
+                👑 Plan VIP
+              </a>
+            </div>
+          </li>
         </ul>
+
       `
     },
 
@@ -157,15 +326,48 @@ document.addEventListener("DOMContentLoaded", () => {
           <li>Estrategias para regular cortisol y sistema nervioso.</li>
           <li>Suplemento anti-estrés recomendado.</li>
         </ul>
+<p><strong class="label">Modalidades:</strong></p>
 
-        <p><strong class="label">Modalidades:</strong></p>
-        <ul>
-          <li><strong>BASIC – 30 días (USD 199):</strong> Plan calmante, ejercicios respiratorios, guía de sueño y 1 suplemento.</li>
-          <li><strong>PLUS – 60 días (USD 299):</strong> Coaching emocional semanal, guía de cortisol, recetarios anti-estrés
-              y 2 suplementos.</li>
-          <li><strong>VIP – 90 días (USD 499):</strong> Seguimiento diario, técnicas de respiración y journaling, visualizaciones,
-              revisión de hábitos y soporte integral.</li>
-        </ul>
+          <ul class="plan-list">
+            <li>
+              <strong>BASIC – 30 días (USD 199):</strong>
+              Plan calmante, ejercicios respiratorios, guía de sueño y 1 suplemento.
+              <div class="payment-buttons">
+                <a href="https://checkout.bold.co/payment/LNK_90XJE81AFS" 
+                  target="_blank" 
+                  class="payment-btn basico">
+                  💪 Plan Básico
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <strong>PLUS – 60 días (USD 299):</strong>
+              Coaching emocional semanal, guía de cortisol, recetarios anti-estrés
+              y 2 suplementos.
+              <div class="payment-buttons">
+                <a href="https://checkout.bold.co/payment/LNK_1DE7RCCMH1" 
+                  target="_blank" 
+                  class="payment-btn plus">
+                  ⚡ Plan Plus
+                </a>
+              </div>
+            </li>
+
+            <li>
+              <strong>VIP – 90 días (USD 499):</strong>
+              Seguimiento diario, técnicas de respiración y journaling, visualizaciones,
+              revisión de hábitos y soporte integral.
+              <div class="payment-buttons">
+                <a href="https://checkout.bold.co/payment/LNK_UWLCZCH989" 
+                  target="_blank" 
+                  class="payment-btn vip">
+                  👑 Plan VIP
+                </a>
+              </div>
+            </li>
+          </ul>
+
       `
     }
   };
