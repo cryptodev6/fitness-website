@@ -4805,7 +4805,7 @@ header.sticky-active {
   box-shadow: 0 8px 20px rgba(0,255,0,0.2);
 }
 .section-plans {
-  background: #0d0d0d;
+  background: #ffffff;
 }
 
 .plans-title {
@@ -4841,7 +4841,7 @@ header.sticky-active {
   margin: 0.5rem;
   text-align: center;
   border-radius: 16px;
-  background: #1a1a1a;
+  background: #161616;
   color: #e8e8e8;
   border: 2px solid transparent;
 }
@@ -5736,4 +5736,85 @@ body {
 }
 .payment-btn.vip:hover {
   background: #6c5ce7;
+}
+/*index plan*/
+.section-plans {
+  background: #ffffff;
+  padding: 80px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.plans-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.plans-heading span {
+  color: #007bff;
+}
+
+.plans-subtitle {
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  font-size: 1rem;
+}
+
+.plan-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.plan-img {
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+}
+
+.plan-body {
+  padding: 30px 25px;
+}
+
+.plan-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.plan-title span {
+  color: #007bff;
+}
+
+.plan-desc {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.btn-cta {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+  background: #0056b3;
+  transform: scale(1.05);
 }
