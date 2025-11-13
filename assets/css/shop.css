@@ -1,0 +1,103 @@
+/* ======================================================
+   SHOP — DISEÑO MINIMAL, MODERNO, PROFESIONAL REAL
+====================================================== */
+
+:root {
+    --primary: #4C6FFF;
+    --neutral: #1E2A38;
+    --muted: #6B7280;
+    --card-radius: 16px;
+    --border: #e5e7eb;
+}
+
+/* Título */
+.products h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 2.5rem;
+}
+
+/* Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+
+/* Tarjeta */
+.product-card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: var(--card-radius);
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.06);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all .22s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 12px 26px rgba(76,111,255,0.18);
+}
+
+/* Imagen */
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Info */
+.product-info {
+    padding: 1rem 1.2rem 1.6rem;
+    flex: 1;
+}
+
+.product-info h4 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--neutral);
+    margin-bottom: 0.4rem;
+}
+
+.product-text {
+    font-size: 0.92rem;
+    color: var(--muted);
+    margin-bottom: 1rem;
+}
+
+/* Precio */
+.price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1.4rem;
+}
+
+/* BOTÓN */
+.btn-buy {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+    padding: 0.75rem 1.4rem;
+    background: var(--primary);
+    color: #fff !important;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all .2s ease;
+}
+
+.btn-buy:hover {
+    background: #3a55cc;
+    transform: translateY(-2px);
+}
+
+.btn-buy:active {
+    transform: scale(0.97);
+}

@@ -1,0 +1,141 @@
+/* =========================================================
+   ABOUT PAGE – ESTILO MINIMAL, PREMIUM Y ELEGANTE
+========================================================= */
+
+:root {
+  --primary: #4C6FFF;
+  --dark: #1A1F2C;
+  --light: #F5F7FA;
+  --muted: #6B7280;
+  --radius: 14px;
+}
+
+/* ============================
+   HERO
+============================ */
+
+.about-hero {
+  padding: 6rem 0 5rem;
+  background: var(--light);
+  text-align: center;
+}
+
+.about-hero .title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.about-hero .subtitle {
+  font-size: 1.15rem;
+  color: var(--muted);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ============================
+   CONTENIDO (VIDEO + TEXTO)
+============================ */
+
+.about-content {
+  padding: 5rem 0;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--dark);
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.05rem;
+  color: var(--muted);
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+/* VIDEO */
+.about-video .video-box {
+  width: 100%;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+}
+
+/* ============================
+   VALORES
+============================ */
+
+.about-values {
+  padding: 5rem 0 6rem;
+  background: #ffffff;
+}
+
+.values-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.value-card {
+  background: var(--light);
+  padding: 2rem;
+  border-radius: var(--radius);
+  text-align: center;
+  transition: all .25s ease;
+  border: 1px solid #e4e7ec;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 26px rgba(76,111,255,0.15);
+  border-color: var(--primary);
+}
+
+.value-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.8rem;
+}
+
+.value-card p {
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+/* ============================
+   RESPONSIVE
+============================ */
+
+@media (max-width: 992px) {
+  .content-wrapper {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 1.7rem;
+  }
+
+  .about-hero .title {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-hero {
+    padding: 4rem 0 3rem;
+  }
+}
