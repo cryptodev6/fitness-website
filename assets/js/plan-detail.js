@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <a href="https://checkout.bold.co/payment/LNK_7W29G58WBT" 
                           target="_blank" 
                           class="payment-btn basico">
-                          💪 Plan Básico
+                          Plan Básico
                         </a>
                       </div>
                     </li>
@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <a href="https://checkout.bold.co/payment/LNK_L6HYYBUQLT" 
                           target="_blank" 
                           class="payment-btn plus">
-                          ⚡ Plan Plus
+                          Plan Plus
                         </a>
                       </div>
                     </li>
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <a href="https://checkout.bold.co/payment/LNK_7W29G58WBT" 
                           target="_blank" 
                           class="payment-btn vip">
-                          👑 Plan VIP
+                          Plan VIP
                         </a>
                       </div>
                     </li>
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <a href="https://checkout.bold.co/payment/LNK_I3KJM8MPR3" 
                       target="_blank" 
                       class="payment-btn basico">
-                      💪 Plan Básico
+                      Plan Básico
                     </a>
                   </div>
                 </li>
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <a href="https://checkout.bold.co/payment/LNK_8X5CIG3VDL" 
                       target="_blank" 
                       class="payment-btn plus">
-                      ⚡ Plan Plus
+                      Plan Plus
                     </a>
                   </div>
                 </li>
@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <a href="https://checkout.bold.co/payment/LNK_L85TTWUV0Y" 
                       target="_blank" 
                       class="payment-btn vip">
-                      👑 Plan VIP
+                      Plan VIP
                     </a>
                   </div>
                 </li>
@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <a href="https://checkout.bold.co/payment/LNK_FKTFT18227" 
                   target="_blank" 
                   class="payment-btn basico">
-                  💪 Plan Básico
+                  Plan Básico
                 </a>
               </div>
             </li>
@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <a href="https://checkout.bold.co/payment/LNK_N6HEGZON4W" 
                   target="_blank" 
                   class="payment-btn plus">
-                  ⚡ Plan Plus
+                  Plan Plus
                 </a>
               </div>
             </li>
@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <a href="https://checkout.bold.co/payment/LNK_249SYSCMMI" 
                   target="_blank" 
                   class="payment-btn vip">
-                  👑 Plan VIP
+                  Plan VIP
                 </a>
               </div>
             </li>
@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   <a href="https://checkout.bold.co/payment/LNK_1DNW24W7K3" 
                     target="_blank" 
                     class="payment-btn basico">
-                    💪 Plan Básico
+                    Plan Básico
                   </a>
                 </div>
               </li>
@@ -227,7 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   <a href="https://checkout.bold.co/payment/LNK_HV2SFF1Q0R" 
                     target="_blank" 
                     class="payment-btn plus">
-                    ⚡ Plan Plus
+                    Plan Plus
                   </a>
                 </div>
               </li>
@@ -240,7 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
                   <a href="https://checkout.bold.co/payment/LNK_N4SN2BK03E" 
                     target="_blank" 
                     class="payment-btn vip">
-                    👑 Plan VIP
+                    Plan VIP
                   </a>
                 </div>
               </li>
@@ -275,7 +275,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <a href="https://checkout.bold.co/payment/LNK_FNAGWDD97G" 
                 target="_blank" 
                 class="payment-btn basico">
-                💪 Plan Básico
+                Plan Básico
               </a>
             </div>
           </li>
@@ -288,7 +288,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <a href="https://checkout.bold.co/payment/LNK_845954WCDJ" 
                 target="_blank" 
                 class="payment-btn plus">
-                ⚡ Plan Plus
+                Plan Plus
               </a>
             </div>
           </li>
@@ -301,7 +301,7 @@ document.addEventListener("DOMContentLoaded", () => {
               <a href="https://checkout.bold.co/payment/LNK_SD35DXN2T4" 
                 target="_blank" 
                 class="payment-btn vip">
-                👑 Plan VIP
+                Plan VIP
               </a>
             </div>
           </li>
@@ -336,7 +336,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <a href="https://checkout.bold.co/payment/LNK_90XJE81AFS" 
                   target="_blank" 
                   class="payment-btn basico">
-                  💪 Plan Básico
+                  Plan Básico
                 </a>
               </div>
             </li>
@@ -349,7 +349,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <a href="https://checkout.bold.co/payment/LNK_1DE7RCCMH1" 
                   target="_blank" 
                   class="payment-btn plus">
-                  ⚡ Plan Plus
+                  Plan Plus
                 </a>
               </div>
             </li>
@@ -362,7 +362,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <a href="https://checkout.bold.co/payment/LNK_UWLCZCH989" 
                   target="_blank" 
                   class="payment-btn vip">
-                  👑 Plan VIP
+                  Plan VIP
                 </a>
               </div>
             </li>

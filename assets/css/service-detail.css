@@ -188,3 +188,168 @@
 #plan-cta {
   color: white !important;
 }
+
+/* ============================================
+   ESTILOS MEJORADOS PARA LAS MODALIDADES
+   (BASIC / PLUS / VIP)
+   ============================================ */
+
+.plan-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* En pantallas medias / grandes mostrar 3 columnas */
+@media (min-width: 992px) {
+  .plan-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tarjeta de cada plan */
+.plan-list li {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.8rem 1.4rem;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+  transition: transform .25s ease, box-shadow .25s ease;
+  position: relative;
+}
+
+/* Hover premium */
+.plan-list li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(76, 111, 255, 0.18);
+  border-color: var(--accent);
+}
+
+/* Título (BASIC / PLUS / VIP) */
+.plan-list li strong {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--ink);
+  display: block;
+  margin-bottom: 0.6rem;
+}
+
+/* Descripción del plan */
+.plan-list li {
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.55;
+}
+
+/* Contenedor del botón */
+.payment-buttons {
+  margin-top: 1.4rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Botones principales de pago */
+.payment-btn {
+  display: inline-block;
+  padding: 0.85rem 1.6rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all .25s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Colores personalizados */
+.payment-btn.basico {
+  background: #4C6FFF;
+  color: white;
+}
+.payment-btn.plus {
+  background: #14b8a6;
+  color: white;
+}
+.payment-btn.vip {
+  background: #ffb400;
+  color: #000;
+}
+
+/* Hover smart */
+.payment-btn:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+}
+
+/* Quitar bullets internos heredados */
+.plan-description ul ul,
+.plan-description .plan-list {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+/* ============================================
+   BOTONES MEJORADOS + ALINEACIÓN PERFECTA
+   ============================================ */
+
+/* Convertimos cada tarjeta en flexbox vertical */
+.plan-list li {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.8rem 1.4rem;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.05);
+  transition: transform .25s ease, box-shadow .25s ease;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* empuja el botón hacia abajo */
+  height: 100%; /* todas las tarjetas igualan altura */
+}
+
+/* Contenedor del botón */
+.payment-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;   /* empuja el botón al fondo de la tarjeta */
+  padding-top: 1.2rem;
+}
+
+/* Botones */
+.payment-btn {
+  display: inline-block;
+  padding: 0.85rem 1.6rem;
+  font-weight: 700 !important;
+  font-size: 0.95rem;
+  border-radius: 50px;
+  text-decoration: none !important;
+  transition: all .25s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 100%; /* opcional: botón igualado */
+  max-width: 200px;  /* se ve elegante */
+}
+
+/* Colores con !important para asegurar consistencia */
+.payment-btn.basico {
+  background: #4C6FFF !important;
+  color: #ffffff !important;
+}
+.payment-btn.plus {
+  background: #14b8a6 !important;
+  color: #ffffff !important;
+}
+.payment-btn.vip {
+  background: #ffb400 !important;
+  color: #000000 !important;
+}
+
+/* Hover uniforme */
+.payment-btn:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.18);
+}
