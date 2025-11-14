@@ -91,7 +91,7 @@
                     <li class="nav-item"><a class="nav-link" href="event-details.html">Reto 21 Días</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="conocenos.html">Conócenos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
                 </ul>
 
                 <a href="contact.html" class="btn-agenda">
@@ -809,6 +809,27 @@
 
   document.addEventListener('DOMContentLoaded', showModalOnce);
 })();
+</script>
+
+<div id="blog-list"></div>
+
+<script>
+async function cargarPosts() {
+  const res = await fetch("http://localhost:3000/api/posts");
+  const posts = await res.json();
+
+  const contenedor = document.getElementById("blog-list");
+  contenedor.innerHTML = posts.map(p => `
+        <article class="blog-item">
+          <img src="http://localhost:3000/uploads/${p.image}">
+          <h3>${p.title}</h3>
+          <p>${p.excerpt}</p>
+          <a href="post.html?id=${p.id}">Leer más</a>
+        </article>
+    `).join("");
+}
+
+cargarPosts();
 </script>
 
 
