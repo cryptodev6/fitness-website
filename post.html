@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Crear Nuevo Post</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, textarea, button {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Crear Nuevo Artículo</h2>
+
+<form id="postForm">
+    <input type="text" id="title" placeholder="Título" required>
+    <textarea id="excerpt" placeholder="Resumen corto" rows="3" required></textarea>
+    <textarea id="content" placeholder="Contenido del artículo" rows="6" required></textarea>
+    <input type="text" id="image" placeholder="URL de la imagen (opcional)">
+    
+    <button type="submit">Guardar Post</button>
+</form>
+
+<p id="msg"></p>
+
+<script>
+document.getElementById("postForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const data = {
+        title: document.getElementById("title").value,
+        excerpt: document.getElementById("excerpt").value,
+        content: document.getElementById("content").value,
+        image: document.getElementById("image").value || null
+    };
+
+    const res = await fetch("http://localhost:3000/api/posts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+    });
+
+    const mensaje = document.getElementById("msg");
+
+    if (res.ok) {
+        mensaje.innerText = "Artículo creado correctamente ✔";
+        mensaje.style.color = "green";
+        e.target.reset();
+    } else {
+        mensaje.innerText = "Error creando el artículo ❌";
+        mensaje.style.color = "red";
+    }
+});
+</script>
+
+</body>
+</html>
