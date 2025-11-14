@@ -5818,3 +5818,16 @@ body {
   background: #0056b3;
   transform: scale(1.05);
 }
+/*about index*/
+.img-style-3 {
+  width: 100%;
+  border-radius: 25px;
+  background: gray;
+  padding: 10px;
+  clip-path: ellipse(90% 75% at 50% 50%);
+  box-shadow: 0 8px 20px rgba(0,0,0,.1);
+  
+}
+
+
+
