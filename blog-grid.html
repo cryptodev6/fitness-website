@@ -76,8 +76,8 @@
 
             <!-- Logo -->
             <a class="navbar-brand" href="index.html">
-                <img src="assets/img/logo.png" id="logo-default" alt="Logo" height="42">
-                <img src="assets/img/logo.png" id="logo-scroll" alt="Logo" height="42" class="d-none">
+                <img src="assets/img/LOGOFITBYDIANAW.png" id="logo-default" alt="Logo" height="42">
+                <img src="assets/img/LOGOFITBYDIANAW.png" id="logo-scroll" alt="Logo" height="42" class="d-none">
             </a>
 
             <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav">
@@ -127,7 +127,7 @@
                     <div class="col-lg-6 mb-4 mb-lg-0">
                         <div class="text-center text-lg-start">
                             <a href="index.html" class="footer-logo">
-                                <img src="assets\img\logo.png" alt="Logo de la marca">
+                                <img src="assets/img/LOGOFITBYDIANAF.png" alt="Logo de la marca">
                             </a>
                         </div>
                     </div>
@@ -268,64 +268,7 @@
     <script src="https://yoga.websitelayout.net/quform/js/scripts.js"></script>
 
     <!-- all js include end -->
-     <script>
-async function cargarPosts() {
-    try {
-        const response = await fetch("http://localhost:3000/api/posts");
-        const posts = await response.json();
-
-        const contenedor = document.getElementById("blog-container");
-        contenedor.innerHTML = "";
-
-        if (posts.length === 0) {
-            contenedor.innerHTML = `
-                <div class="col-12 text-center">
-                    <h4>No hay artículos aún</h4>
-                </div>
-            `;
-            return;
-        }
-
-        posts.forEach(post => {
-            contenedor.innerHTML += `
-                <div class="col-md-6 col-lg-4 mt-2-2 wow fadeIn">
-                    <article class="card card-style3 h-100">
-                        <img src="${post.image}" alt="Imagen del post">
-                        <div class="card-body">
-                            <ul class="list-style3">
-                                <li>${new Date(post.created_at).toLocaleDateString()}</li>
-                                <li><a href="blog-details.html?id=${post.id}">Comentarios</a> (<span>0</span>)</li>
-                            </ul>
-                            <h4 class="mb-3">
-                                <a href="blog-details.html?id=${post.id}">${post.title}</a>
-                            </h4>
-                            <p class="card-text">${post.excerpt}</p>
-                            <div class="card-footer">
-                                <div>
-                                    <img class="border-radius-50 w-20 me-2 align-middle"
-                                        src="assets/img/default-avatar.png" alt="">
-                                    <h6 class="mb-0 d-inline-block display-30 text-muted font-weight-500">
-                                        Autor
-                                    </h6>
-                                </div>
-                                <a href="#!" class="text-muted font-weight-500">
-                                    <i class="ti-heart me-2 align-middle"></i><span>0</span>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            `;
-        });
-
-    } catch (error) {
-        console.error("Error cargando posts:", error);
-    }
-}
-
-document.addEventListener("DOMContentLoaded", cargarPosts);
-</script>
-
+ 
 
     
 

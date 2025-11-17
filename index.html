@@ -74,7 +74,7 @@
 
             <!-- Logo -->
             <a class="navbar-brand" href="index.html">
-                <img src="assets/img/logo.png" id="logo-default" alt="Logo" height="42">
+                <img src="assets/img/LOGOFITBYDIANAW.png" id="logo-default" alt="Logo" height="42">
                 <img src="assets/img/logo.png" id="logo-scroll" alt="Logo" height="42" class="d-none">
             </a>
 
@@ -91,7 +91,7 @@
                     <li class="nav-item"><a class="nav-link" href="event-details.html">Reto 21 Días</a></li>
                     <li><a href="shop.html">Shop</a></li>
                     <li><a href="conocenos.html">Conócenos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="blog.php">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="post.html">Blog</a></li>
                 </ul>
 
                 <a href="contact.html" class="btn-agenda">
@@ -560,7 +560,7 @@
                     <div class="col-lg-6 mb-4 mb-lg-0">
                         <div class="text-center text-lg-start">
                             <a href="index.html" class="footer-logo">
-                                <img src="assets\img\logo.png" alt="Logo de la marca">
+                                <img src="assets/img/LOGOFITBYDIANAF.png" alt="Logo de la marca">
                             </a>
                         </div>
                     </div>
@@ -722,116 +722,7 @@
     <script src="https://yoga.websitelayout.net/quform/js/plugins.js"></script>
     <!-- form scripts js -->
     <script src="https://yoga.websitelayout.net/quform/js/scripts.js"></script>
-    <script>
-      (function() {
-        var KEY = 'nl_status'; // 'subscribed' | 'dismissed'
-        // ------- helpers: work with Bootstrap 4 (jQuery plugin) or Bootstrap 5 (class API)
-        function hasjQueryModal(el) {
-          return !!(window.jQuery && jQuery.fn && jQuery.fn.modal && jQuery(el).modal);
-        }
-
-        function showModal(sel) {
-          var el = document.querySelector(sel);
-          if (!el) return;
-          if (hasjQueryModal(el)) {
-            jQuery(sel).modal('show');
-          } else if (window.bootstrap && bootstrap.Modal) {
-            bootstrap.Modal.getOrCreateInstance(el).show();
-          }
-        }
-
-        function hideModal(sel) {
-          var el = document.querySelector(sel);
-          if (!el) return;
-          if (hasjQueryModal(el)) {
-            jQuery(sel).modal('hide');
-          } else if (window.bootstrap && bootstrap.Modal) {
-            bootstrap.Modal.getOrCreateInstance(el).hide();
-          }
-        }
-
-        function status() {
-          return localStorage.getItem(KEY);
-        }
-
-        function setStatus(val) {
-          try {
-            localStorage.setItem(KEY, val);
-          } catch (_) {}
-        }
-
-  function showModalOnce() {
-    if (!status()) setTimeout(function(){ showModal('#subscribeModal'); }, 2500);
-  }
-
-  // —— make the X work even if data-* attributes don’t
-  document.addEventListener('click', function (e) {
-    var btn = e.target.closest('.modal-close');
-    if (!btn) return;
-    e.preventDefault();
-    hideModal('#subscribeModal');
-  });
-
-  // —— mark dismissed/subscribed when the modal actually hides
-  (function bindHiddenEvent(){
-    var el = document.getElementById('subscribeModal');
-    if (!el) return;
-
-    // Bootstrap 5 (native event)
-    el.addEventListener('hidden.bs.modal', function () {
-      if (status() !== 'subscribed') setStatus('dismissed');
-    });
-
-    // Bootstrap 4 (jQuery event) – guard in case jQuery exists
-    if (window.jQuery) {
-      jQuery(el).on('hidden.bs.modal', function () {
-        if (status() !== 'subscribed') setStatus('dismissed');
-      });
-    }
-  })();
-
-  // —— subscribe form
-  document.addEventListener('submit', function (e) {
-    var form = e.target.closest('#subscribeForm');
-    if (!form) return;
-
-    e.preventDefault();
-    var email = (document.getElementById('subscribeEmail') || {}).value || '';
-    var ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-    if (!ok) { alert('Ingresa un correo válido'); return; }
-
-    // TODO: POST to your backend/newsletter provider
-    // fetch('/api/subscribe', { method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({ email }) })
-
-    setStatus('subscribed');
-    hideModal('#subscribeModal');
-  });
-
-  document.addEventListener('DOMContentLoaded', showModalOnce);
-})();
-</script>
-
-<div id="blog-list"></div>
-
-<script>
-async function cargarPosts() {
-  const res = await fetch("http://localhost:3000/api/posts");
-  const posts = await res.json();
-
-  const contenedor = document.getElementById("blog-list");
-  contenedor.innerHTML = posts.map(p => `
-        <article class="blog-item">
-          <img src="http://localhost:3000/uploads/${p.image}">
-          <h3>${p.title}</h3>
-          <p>${p.excerpt}</p>
-          <a href="post.html?id=${p.id}">Leer más</a>
-        </article>
-    `).join("");
-}
-
-cargarPosts();
-</script>
-
+    
 
 
     <!-- all js include end -->
