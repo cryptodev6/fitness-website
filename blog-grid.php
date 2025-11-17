@@ -1,0 +1,379 @@
+<?php
+include "Config\db.php";
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="Chitrakoot Web">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="Health Fitness & Yoga HTML Template">
+    <meta name="description" content="Yoga - Health Fitness & Yoga HTML Template">
+
+    <!-- title  -->
+    <title>Diana Leal - Fitness Coaching</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="">
+    <link rel="apple-touch-icon" href="https://yoga.websitelayout.net/img/logos/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://yoga.websitelayout.net/img/logos/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://yoga.websitelayout.net/img/logos/apple-touch-icon-114x114.png">
+
+    <!-- plugins -->
+    <link rel="stylesheet" href="https://yoga.websitelayout.net/css/plugins.css">
+
+    <!-- search css -->
+    <link href="assets/css/search.css" rel="stylesheet">
+
+    <!-- quform css -->
+    <link href="assets/css/base.css" rel="stylesheet">
+
+    <!-- theme core css -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- PAGE LOADING
+    ================================================== -->
+    <div id="preloader"></div>
+
+    <!-- MAIN WRAPPER
+    ================================================== -->
+    <div class="main-wrapper">
+
+        <!-- HEADER
+        ================================================== -->
+       <header class="header-modern shadow-sm">
+
+    <!-- Top bar -->
+    <div class="top-bar bg-primary text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            
+            <!-- Contact -->
+            <ul class="list-inline mb-0 small">
+                <li class="list-inline-item me-3"><i class="ti-mobile me-1"></i> +57 300 000 0000</li>
+                <li class="list-inline-item d-none d-md-inline"><i class="ti-email me-1"></i> bienestar@fitlife.com</li>
+            </ul>
+
+            <!-- Social -->
+            <ul class="list-inline mb-0 small">
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="#" class="text-white"><i class="fab fa-whatsapp"></i></a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white py-3 sticky-top">
+        <div class="container">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/LOGOFITBYDIANAW.png" id="logo-default" alt="Logo" height="42">
+                <img src="assets/img/LOGOFITBYDIANAW.png" id="logo-scroll" alt="Logo" height="42" class="d-none">
+            </a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="history.html">Perfil Bienestar</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Planes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="event-details.html">Reto 21 Días</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="conocenos.html">Conócenos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog-grid.html">Blog</a></li>
+                </ul>
+
+                 <a href="contact.html" class="btn-agenda">
+                    Agenda tu llamada
+                </a>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<!-- BLOG GRID -->
+<div class="comment-form mt-5 p-4 border rounded bg-light">
+
+    <!-- Título -->
+    <h3 class="mb-4">Deja un comentario</h3>
+
+    <!-- FORMULARIO -->
+    <form action="guardar_comentario.php" method="POST">
+
+        <!-- ID del post -->
+        <input type="hidden" name="post_id" value="<?php echo $_GET['post_id'] ?? 1; ?>">
+
+        <!-- Campo: Nombre -->
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Tu nombre</label>
+            <input 
+                type="text" 
+                name="nombre" 
+                class="form-control rounded-pill" 
+                placeholder="Ingresa tu nombre"
+                required>
+        </div>
+
+        <!-- Campo: Comentario -->
+        <div class="mb-3">
+            <label class="form-label fw-semibold">Comentario</label>
+            <textarea 
+                name="comentario" 
+                class="form-control" 
+                rows="4" 
+                placeholder="Escribe tu comentario aquí..."
+                required></textarea>
+        </div>
+
+        <!-- Botón -->
+        <button 
+            type="submit" 
+            class="btn btn-primary rounded-pill px-4">
+            Enviar comentario
+        </button>
+
+    </form>
+
+
+    <!-- SECCIÓN DE LISTA DE COMENTARIOS -->
+    <h4 class="mt-5 mb-3">Comentarios registrados</h4>
+
+    <section class="section-testimonials bg-light text-center py-5">
+        <div class="container">
+
+            <div class="section-header mb-5">
+                <span class="badge-title">COMENTARIOS</span>
+                <h2 class="section-title">
+                    <span class="highlight">Lo que opinan</span> nuestros clientes
+                </h2>
+                <p class="section-subtitle">
+                    Comentarios reales de personas que han usado nuestros productos.
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+                <?php
+                include "Config/db.php";
+
+                $post_id = $_GET['post_id'] ?? 1;
+
+                $sql = "SELECT name, comment, created_at 
+                        FROM comments 
+                        WHERE post_id = $post_id 
+                        ORDER BY id DESC";
+
+                $result = $conn->query($sql);
+
+                if ($result && $result->num_rows > 0) {
+
+                    while ($row = $result->fetch_assoc()) {
+                        echo '
+                        <div class="col-md-6 col-lg-4 mb-4">
+                            <div class="testimonial-item p-4 shadow-sm rounded bg-white">
+                                <div class="testimonial-content">
+                                    <h5 class="fw-bold">'.$row['name'].'</h5>
+                                    <p class="text-muted small">'.$row['created_at'].'</p>
+                                    <p class="mt-3">"'.$row['comment'].'"</p>
+                                </div>
+                            </div>
+                        </div>
+                        ';
+                    }
+
+                } else {
+                    echo '
+                    <div class="col-12">
+                        <p class="text-muted">No hay comentarios todavía. Sé el primero en comentar.</p>
+                    </div>
+                    ';
+                }
+                ?>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+
+
+
+
+
+        <!-- FOOTER
+        ================================================== -->
+        <footer class="footer-two bg-dark position-relative overflow-hidden pt-6 pt-md-8"> 
+            <div class="container">
+                <!-- LOGO + NAV -->
+                <div class="row border-bottom border-color-light-white mb-7 pb-2-9 align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <div class="text-center text-lg-start">
+                            <a href="index.html" class="footer-logo">
+                                <img src="assets/img/LOGOFITBYDIANAF.png" alt="Logo de la marca">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="footer-menu text-center text-lg-end">
+                            <ul class="footer-nav">
+                            <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                            <li><a href="history.html"><i class="fas fa-user-heart"></i> Perfil Bienestar</a></li>
+                            <li><a href="services.html"><i class="fas fa-dumbbell"></i> Planes</a></li>
+                            <li><a href="event-details.html"><i class="fas fa-bolt"></i> Reto 21 Días</a></li>
+                            <li><a href="shop.html"><i class="fas fa-shopping-bag"></i> Shop</a></li>
+                            <li><a href="about.html"><i class="fas fa-users"></i> Conócenos</a></li>
+                            <li><a href="blog-grid.html"><i class="fas fa-book-open"></i> Blog</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- INFO BLOCKS -->
+                <div class="row mb-6 mb-md-8 mt-n1-9">
+
+                    <!-- HORARIOS -->
+                    <div class="col-md-6 col-lg-4 mt-1-9">
+                        <div>
+                            <div class="sec-title pb-1-9">
+                                <h3 class="text-white mb-0 h4">Horario de atención</h3>
+                            </div>
+                            <ul class="list-unstyled mb-0">
+                                <li class="text-white opacity6 mb-3">Lunes a Viernes: 9:00 a.m. – 6:00 p.m.</li>
+                                <li class="text-white opacity6 mb-3">Sábados: 10:00 a.m. – 2:00 p.m.</li>
+                                <li class="text-white opacity6 mb-0">Domingos: Cerrado</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- CONTACTO -->
+                    <div class="col-md-6 col-lg-4 mt-1-9">
+                        <div>
+                            <div class="sec-title pb-1-9">
+                                <h3 class="text-white mb-0 h4">Contáctanos</h3>
+                            </div>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-3"><a href="#!" class="text-white opacity6 text-secondary-hover">contacto@fitbydiana.com</a></li>
+                                <li class="mb-3"><a href="#!" class="text-white opacity6 text-secondary-hover">+51 999 999 999</a></li>
+                                <li class="text-white opacity6 mb-0">Av. Salud Integral 101, Lima, Perú</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- NEWSLETTER -->
+                    <div class="col-md-6 col-lg-4 mt-1-9">
+                        <div>
+                            <div class="sec-title pb-1-9">
+                                <h3 class="text-white mb-0 h4">Suscríbete</h3>
+                            </div>
+                            <p class="opacity6 text-white">Recibe consejos de nutrición, recetas, rutinas y promociones exclusivas directamente en tu correo.</p>
+                            <div class="footer-newsletter">
+                                <form class="quform newsletter-rounded" action="#" method="post" enctype="multipart/form-data">
+                                    <div class="quform-elements">
+                                        <div class="row">
+                                            <!-- Email input -->
+                                            <div class="col-md-12">
+                                                <div class="quform-element m-0">
+                                                    <div class="quform-input">
+                                                        <input class="rounded-pill form-control" id="email_address" type="text" name="email_address" placeholder="Ingresa tu correo" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Botón -->
+                                            <div class="col-md-12">
+                                                <div class="quform-submit-inner">
+                                                    <button class="btn btn-white text-secondary m-0 px-4" type="submit">
+                                                        <i class="fas fa-paper-plane"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="quform-loading-wrap"><span class="quform-loading"></span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- COPYRIGHT -->
+            <div class="border-top border-color-light-white py-4">
+                <div class="text-center fw-bold">
+                    <p class="mb-0 text-white">
+                        &copy; <span class="current-year"></span> Todos los derechos reservados. Marca desarrollada por <a href="#!" class="text-secondary text-primary-hover">@</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- cursor helper -->
+        <div class="cursor-helper">
+            <div class="cursor-helper-outer"></div>
+            <div class="cursor-helper-inner"></div>
+        </div>
+
+    </div>
+
+    <!-- BUY TEMPLATE
+    ================================================== -->
+    <div class="buy-theme alt-font d-none d-lg-inline-block"><a href="https://wrapbootstrap.com/theme/yoga-health-fitness-yoga-html-template-WB048T613" target="_blank"><i class="fas fa-cart-plus"></i><span>Buy Template</span></a></div>
+
+    <div class="all-demo alt-font d-none d-lg-inline-block"><a href="https://www.chitrakootweb.com/contact.html" target="_blank"><i class="far fa-envelope"></i><span>Quick Question?</span></a></div>
+
+    <!-- start scroll to top -->
+    <a href="#!" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
+    <!-- end scroll to top -->
+
+    <!-- jQuery -->
+    <script src="https://yoga.websitelayout.net/js/jquery.min.js"></script>
+
+    <!-- popper js -->
+    <script src="https://yoga.websitelayout.net/js/popper.min.js"></script>
+
+    <!-- bootstrap -->
+    <script src="https://yoga.websitelayout.net/js/bootstrap.min.js"></script>
+
+    <!-- jquery -->
+    <script src="https://yoga.websitelayout.net/js/core.min.js"></script>
+
+    <!-- Search -->
+    <script src="https://yoga.websitelayout.net/search/search.js"></script>
+
+    <!-- custom scripts -->
+    <script src="https://yoga.websitelayout.net/js/main.js"></script>
+
+    <!-- form plugins js -->
+    <script src="https://yoga.websitelayout.net/quform/js/plugins.js"></script>
+
+    <!-- form scripts js -->
+    <script src="https://yoga.websitelayout.net/quform/js/scripts.js"></script>
+
+    <!-- all js include end -->
+ 
+
+    
+
+</body>
+
+
+<!-- Mirrored from yoga.websitelayout.net/blog-grid.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Aug 2025 21:07:51 GMT -->
+</html>
