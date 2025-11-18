@@ -114,60 +114,64 @@
         <!-- OUR SERVICES-->
         <section class="section-plans">
           <div class="container text-center">
-            
+            <!-- Botón Volver -->
+          <div class="text-center mb-4">
+            <a href="services.html" class="btn btn-outline-success fw-bold px-4 py-2">
+              ⬅ Volver a Planes
+            </a>
+          </div>
             <!-- Encabezado -->
             <h2 class="plans-title">
-              Elige tu <span>Plan de Transformación</span>
+              Testimonios <span>Nuestros Clientes</span>
             </h2>
             <p class="plans-subtitle">
-              Cada plan está diseñado con un enfoque distinto, pero con un mismo propósito:
-              <strong>transformar tu cuerpo y tu energía</strong>.
+              <strong>Lo que dicen nuestros clientes</strong>.
             </p>
 
-            <!-- Subtítulo -->
-            <h3 class="section-subtitle">Nuestros Programas</h3>
-            <p class="section-intro">Selecciona el camino que mejor se adapta a tu estilo de vida</p>
+           <h2>Testimonios que inspiran</h2>
 
-            <!-- Tarjetas de planes -->
-            <div class="row justify-content-center g-4 mt-4">
+   <div class="video-grid">
+  <div class="video-card" data-video="assets\vid\test1.mp4">
+    <video src="assets\vid\test1.mp4" muted preload="metadata"></video>
+    <p>Carla Diaz</p>
+  </div>
 
-              <!-- Plan Fitness -->
-              <div class="col-md-5">
-                <div class="plan-card">
-                  <div class="plan-img" style="background-image:url('assets/img/banner_principal_fitness.jpg');"></div>
-                  <div class="plan-body">
-                    <h4 class="plan-title"><span>Planes de Fitness</span></h4>
-                    <p class="plan-desc">
-                      Entrenamientos enfocados en <span class="highlight">fuerza, definición</span> 
-                      y composición corporal, diseñados para que alcances tu mejor versión.
-                    </p>
-                    <a href="P_fitnes.html" class="btn-cta">Ver detalles</a>
-                  </div>
-                </div>
-              </div>
+  <div class="video-card" data-video="assets\vid\test2.mp4">
+     <video src="assets\vid\test2.mp4" muted preload="metadata"></video>
+    <p>Isabel Verezuela</p>
+  </div>
 
-              <!-- Plan Bienestar -->
-              <div class="col-md-5">
-                <div class="plan-card">
-                  <div class="plan-img" style="background-image:url('assets/img/banner_principal_bienestar.JPG');"></div>
-                  <div class="plan-body">
-                    <h4 class="plan-title"><span>Planes de Bienestar</span></h4>
-                    <p class="plan-desc">
-                      Programas diseñados para mejorar tus <span class="highlight">hábitos, energía mental</span> 
-                      y equilibrio emocional a través de movimiento consciente y nutrición funcional.
-                    </p>
-                    <a href="P_Bienestar.html" class="btn-cta">Ver detalles</a>
-                  </div>
-                </div>
-              </div>
+  <div class="video-card" data-video="assets\vid\test3.mp4">
+  <video src="assets\vid\test3.mp4" muted preload="metadata"></video>
+    <p>Cielo Arias</p>
+  </div>
 
-            </div>
-          </div>
-        </section>
+  <div class="video-card" data-video="assets\vid\test4.mp4">
+    <video src="assets\vid\test4.mp4" muted preload="metadata"></video>
+    <p>Esteban Alarcon</p>
+  </div>
 
-        <div class="btn-container">
-            <a href="testimonios.html" class="btn-cta-t">Testimonios</a>
-        </div>
+  <div class="video-card" data-video="assets\vid\test5.mp4">
+    <video src="assets\vid\test5.mp4" muted preload="metadata"></video>
+    <p>Keyla</p>
+</div>
+<div class="video-card" data-video="assets\vid\test6.mp4">
+    <video src="assets\vid\test6.mp4" muted preload="metadata"></video>
+    <p>Fredy Sanchez</p>
+  </div>
+  
+  <!-- agrega más videos aquí -->
+</div>
+
+<!-- Modal oculto -->
+    <div id="videoModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content">
+        <iframe id="modalVideo" src="" allowfullscreen></iframe>
+    </div>
+    </div>
+</section>
+
 
 
  <footer class="footer-two bg-dark position-relative overflow-hidden pt-6 pt-md-8"> 
@@ -316,6 +320,8 @@
 
     <!-- form scripts js -->
     <script src="https://yoga.websitelayout.net/quform/js/scripts.js"></script>
+
+    <script src="assets\js\test.js"></script>
 
     <!-- all js include end -->
 
